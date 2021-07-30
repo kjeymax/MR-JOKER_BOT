@@ -66,7 +66,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/mrjoker
-RUN git clone -b main https://github.com/kmacprt/MR-JOKER-BOT /root/mrjoker
+RUN git clone -b main https://github.com/kjeymax/MR-JOKER_BOT /root/mrjoker
 WORKDIR /root/mrjoker
 
 COPY . .
