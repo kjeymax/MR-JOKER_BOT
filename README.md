@@ -45,7 +45,7 @@ python3 -m mrjoker
 
 <h3 align = "justify">Create a new <u>config.py</u> or rename <u>sample_config.py</u> to <u>config.py</u> file in same dir and import, then extend this class.</h3>
 
--`TOKEN` : Your [bot Token](https://t.me/BotFather), As a string
+- `TOKEN` : Your [bot Token](https://t.me/BotFather), As a string
 
 
 
