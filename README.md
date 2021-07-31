@@ -21,6 +21,8 @@
 ## Deploy
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/kjeymax/MR-JOKER_BOT)
 
+[![Deploy To Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/kjeymax/MR-JOKER_BOT.git)
+
 [![Contact me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/kavinduaj)
 
 
