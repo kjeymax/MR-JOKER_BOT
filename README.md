@@ -90,36 +90,67 @@ In the case of postgres, this is how you would set up a the database on a debian
 
 - Install postgresql  
 
-```sudo apt-get update && sudo apt-get install postgresql ```
+```
+sudo apt-get update && sudo apt-get install postgresql 
+
+```
 
 - Change to the postgres user 
  
- ```sudo su - postgres```
+ ```
+ sudo su - postgres
+ 
+ ```
  
  - Create a new database user (change YOUR_USER appropriately)
  
- ```createuser -P -s -e YOUR_USER```
+ ```
+ createuser -P -s -e YOUR_USER
+ 
+ ```
  
 This will be followed by you needing to input your password.
 
 - create a new database table:
 
-```createdb -O YOUR_USER YOUR_DB_NAME```
+```
+
+createdb -O YOUR_USER YOUR_DB_NAME
+
+```
 
 Change YOUR_USER and YOUR_DB_NAME appropriately.
 
 - finally:
 
-```psql YOUR_DB_NAME -h YOUR_HOST YOUR_USER```
+```
+
+psql YOUR_DB_NAME -h YOUR_HOST YOUR_USER
+
+```
 
 <h3 align = "justify">This will allow you to connect to your database via your terminal. By default, YOUR_HOST should be 0.0.0.0:5432.</br></br>
 
 You should now be able to build your database URI. This will be:</h3>
 
-```sqldbtype://username:pw@hostname:port/db_name```
+```
+sqldbtype://username:pw@hostname:port/db_name
+
+```
 
 <h3 align = "justify">Replace sqldbtype with whichever db youre using (eg postgres, mysql, sqllite, etc) repeat for your username, password, hostname (localhost?), port (50000), and db name.</h3>
 
- 
+## Support
+<a href="https://t.me/lkhitech"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
+<a href="https://t.me/hitechlkgroup"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
  [![Contact me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/kavinduaj)
 
+## Credits
+
+ - [Utah](https://github.com/minatouzuki/utah).
+ - [WilliamButcherBot](https://github.com/thehamkercat/WilliamButcherBot)
+ - [Alita_Robot](https://github.com/DivideProjects/Alita_Robot/)
+
+<h3 align = "justify">Don't forget to star this repo if you liked it.</br></br>
+
+Enjoy Your Bot!</h3> 💝
