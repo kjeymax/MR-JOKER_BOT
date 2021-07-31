@@ -21,7 +21,9 @@
 ## Deploy
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/kjeymax/MR-JOKER_BOT)
 
-[![Deploy To Railway](https://railway.app/button.svg)](https://railway.app/new/template?=https://github.com/kjeymax/MR-JOKER_BOT)
+[![Deploy To Railway](https://railway.app/button.svg)]
+
+[![Deploy to Qovery](https://img.shields.io/badge/Deploy-Qovery-6EC0D9.svg)](https://qovery.com)
 
 [![Contact me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/kavinduaj)
 
