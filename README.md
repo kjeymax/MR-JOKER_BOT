@@ -12,13 +12,6 @@
 <h3 align = "justify">Originally a simple group management bot with multiple admin features, it has evolved into becoming a basis for modular bots aiming to provide simple plugin expansion via a simple drag and drop.</h3></p>
 
 
-
-
-
-
-
-
-
 ## Deploy
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/kjeymax/MR-JOKER_BOT)
 
@@ -141,8 +134,8 @@ sqldbtype://username:pw@hostname:port/db_name
 <h3 align = "justify">Replace sqldbtype with whichever db youre using (eg postgres, mysql, sqllite, etc) repeat for your username, password, hostname (localhost?), port (50000), and db name.</h3>
 
 ## Support
-<a href="https://t.me/lkhitech"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
-<a href="https://t.me/hitechlkgroup"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
+<a href="https://t.me/lkhitech"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a></br>
+<a href="https://t.me/hitechlkgroup"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a></br>
  [![Contact me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/kavinduaj)
 
 ## Credits
@@ -153,4 +146,4 @@ sqldbtype://username:pw@hostname:port/db_name
 
 <h3 align = "justify">Don't forget to star this repo if you liked it.</br></br>
 
-Enjoy Your Bot!</h3> 💝
+Enjoy Your Bot! 💝</h3> 
