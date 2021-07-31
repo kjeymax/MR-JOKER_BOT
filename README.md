@@ -1,6 +1,22 @@
-<h1>Yo,🧞‍♂️I'm Alive..I'm a super bot 🔥...🚴‍♂️Speed 1 THz..Memory 1 Zettabyte.🕺🏻</h1>
+<h1> ❝𝐓𝐡𝐞 𝐌𝐨𝐬𝐭 𝐏𝐨𝐰𝐞𝐫𝐟𝐮𝐥𝐥 𝐆𝐫𝐨𝐮𝐩 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐁𝐨𝐭❞ </h1>
+
+
+
+
+[![Mr.Joker LOGOG](https://telegra.ph/file/6525d89de5b72003d80fa.png)](https://t.me/Mrjokerlk_bot)
+
+<h1 align ="center"> 𝍖𝍖𝍖𐒄Ɽ.ʝⰙƘƸⱤ𝍖𝍖𝍖</h1>
+<h1 align = "center">Yo,🤡♂️I'm Alive..I'm a super bot 🔥...🚴‍♂️Speed 1 THz..Memory 1 Zettabyte.🕺</center></h1>
+
+
+
+
+
+
 
 ## Deploy
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/kmacprt/MR-JOKER-BOT)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/kjeymax/MR-JOKER_BOT)
+
+[![Contact me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https:t.me/lkhitech)
 
 
