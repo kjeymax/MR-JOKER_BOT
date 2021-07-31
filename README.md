@@ -8,6 +8,10 @@
 <h1 align ="center"> 𝍖𝍖𝍖𐒄Ɽ.ʝⰙƘƸⱤ𝍖𝍖𝍖</h1>
 <h1 align = "center">Yo,🤡♂️I'm Alive..I'm a super bot 🔥...🚴‍♂️Speed 1 THz..Memory 1 Zettabyte.🕺</center></h1>
 
+<h3 align = "justify">A modular telegram Python bot running on python3 with an sqlalchemy database.
+  
+Originally a simple group management bot with multiple admin features, it has evolved into becoming a basis for modular bots aiming to provide simple plugin expansion via a simple drag and drop.</h3>
+
 
 
 
@@ -17,6 +21,6 @@
 ## Deploy
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/kjeymax/MR-JOKER_BOT)
 
-[![Contact me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https:t.me/lkhitech)
+[![Contact me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/kavinduaj)
 
 
