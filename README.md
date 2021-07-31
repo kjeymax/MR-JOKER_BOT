@@ -84,13 +84,42 @@ pip3 install -U -r requirements.txt
 
 ## Database
 
-<h3 align = "justify">If you wish to use a database-dependent module (eg: locks, notes, userinfo, users, filters, welcomes), you'll need to have a database installed on your system. I use postgres, so I recommend using it for optimal compatibility.
+<h3 align = "justify">If you wish to use a database-dependent module (eg: locks, notes, userinfo, users, filters, welcomes), you'll need to have a database installed on your system. I use postgres, so I recommend using it for optimal compatibility.</br></br>
 
 In the case of postgres, this is how you would set up a the database on a debian/ubuntu system. Other distributions may vary</h3>
+
+- Install postgresql  
+
+```sudo apt-get update && sudo apt-get install postgresql ```
+
+- Change to the postgres user 
  
+ ```sudo su - postgres```
  
+ - Create a new database user (change YOUR_USER appropriately)
  
+ ```createuser -P -s -e YOUR_USER```
  
+This will be followed by you needing to input your password.
+
+- create a new database table:
+
+```createdb -O YOUR_USER YOUR_DB_NAME```
+
+Change YOUR_USER and YOUR_DB_NAME appropriately.
+
+- finally:
+
+```psql YOUR_DB_NAME -h YOUR_HOST YOUR_USER```
+
+<h3 align = "justify">This will allow you to connect to your database via your terminal. By default, YOUR_HOST should be 0.0.0.0:5432.</br></br>
+
+You should now be able to build your database URI. This will be:</h3>
+
+```sqldbtype://username:pw@hostname:port/db_name```
+
+<h3 align = "justify">Replace sqldbtype with whichever db youre using (eg postgres, mysql, sqllite, etc) repeat for your username, password, hostname (localhost?), port (50000), and db name.</h3>
+
  
  [![Contact me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/kavinduaj)
 
