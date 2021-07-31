@@ -134,12 +134,12 @@ sqldbtype://username:pw@hostname:port/db_name
 <h3 align = "justify">Replace sqldbtype with whichever db youre using (eg postgres, mysql, sqllite, etc) repeat for your username, password, hostname (localhost?), port (50000), and db name.</h3>
 
 ## Support
-[![HITECH](https://img.shields.io/badge/LKHITECH-Channel-red?style=for-the-badge&logo=telegram)](https://telegram.dog/lkhitech)
-[![HITECH](https://img.shields.io/badge/LKHITECH-Group-red?style=for-the-badge&logo=telegram)](https://telegram.dog/hitechlkgroup)
+[![HITECH](https://img.shields.io/badge/LKHITECH-Channel-red?style=for-the-badge&logo=telegram)](https://telegram.dog/lkhitech)</br></br>
+[![HITECH](https://img.shields.io/badge/LKHITECH-Group-red?style=for-the-badge&logo=telegram)](https://telegram.dog/hitechlkgroup)</br></br>
 [![CONTACT ME](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/kavinduaj)
 
-https://img.shields.io/github/forks/kjeymax/MR-JOKER_BOT?color=Red%20&label=Github%20Fork&style=for-the-badge
-https://img.shields.io/github/watchers/kjeymax/MR-JOKER_BOT?color=red&style=for-the-badge
+[![MRJOKER](https://img.shields.io/github/forks/kjeymax/MR-JOKER_BOT?color=Red%20&label=Github%20Fork&style=for-the-badge)]</br></br>
+[![MRJOKER](https://img.shields.io/github/watchers/kjeymax/MR-JOKER_BOT?color=red&style=for-the-badge)
 
 ## Credits
 
