@@ -36,8 +36,14 @@
 <h3 align = "justify">Once you've setup your database and your configuration (see below) is complete, simply run:</h3>
 
 ```
+
 python3 -m mrjoker
 
 ```
+
+#3 Configuration 
+
+<h3 align = "justify">Create a new `config.py` or rename `sample_config` to `config.py` file in same dir and import, then extend this class.</h3>
+
 
 
