@@ -26,8 +26,6 @@
 
 [![Deploy to Qovery](https://img.shields.io/badge/Deploy-Qovery-6EC0D9.svg)](https://qovery.com)
 
-[![Contact me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/kavinduaj)
-
 
 
 ## Starting the bot
@@ -73,4 +71,26 @@ python3 -m mrjoker
 -   `BAN_STICKER`          : ID of the sticker you want to use when banning people
 -   `WALL_API`             : Required for wallpaper. [Get your's from](https://wall.alphacoders.com/)  
  
+ 
+## Python dependencies
+
+<h3 align = "justify">Install the necessary python dependencies by moving to the project directory and running:</h3>
+
+```
+pip3 install -U -r requirements.txt
+
+```
+
+
+## Database
+
+<h3 align = "justify">If you wish to use a database-dependent module (eg: locks, notes, userinfo, users, filters, welcomes), you'll need to have a database installed on your system. I use postgres, so I recommend using it for optimal compatibility.
+
+In the case of postgres, this is how you would set up a the database on a debian/ubuntu system. Other distributions may vary</h3>
+ 
+ 
+ 
+ 
+ 
+ [![Contact me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/kavinduaj)
 
