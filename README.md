@@ -3,7 +3,7 @@
 
 
 
-[![Mr.Joker LOGOG](https://telegra.ph/file/6525d89de5b72003d80fa.png)](https://t.me/Mrjokerlk_bot)
+<img src = "https://telegra.ph/file/6525d89de5b72003d80fa.png" align = "center")(https://t.me/Mrjokerlk_bot)
 
 <h1 align ="center"> 𝍖𝍖𝍖𐒄Ɽ.ʝⰙƘƸⱤ𝍖𝍖𝍖</h1>
 <h1 align = "center">Yo,🤡♂️I'm Alive..I'm a super bot 🔥...🚴‍♂️Speed 1 THz..Memory 1 Zettabyte.🕺</center></h1>
@@ -41,7 +41,7 @@ python3 -m mrjoker
 
 ```
 
-#3 Configuration 
+## Configuration 
 
 <h3 align = "justify">Create a new <u>config.py</u> or rename <u>sample_config.py</u> to <u>config.py</u> file in same dir and import, then extend this class.</h3>
 
