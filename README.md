@@ -3,7 +3,7 @@
 
 
 
-<img src = "https://telegra.ph/file/6525d89de5b72003d80fa.png" align = "center")(https://t.me/Mrjokerlk_bot)
+<center>[![Mr.Joker LOGOG](https://telegra.ph/file/6525d89de5b72003d80fa.png)](https://t.me/Mrjokerlk_bot)</center>
 
 <h1 align ="center"> 𝍖𝍖𝍖𐒄Ɽ.ʝⰙƘƸⱤ𝍖𝍖𝍖</h1>
 <h1 align = "center">Yo,🤡♂️I'm Alive..I'm a super bot 🔥...🚴‍♂️Speed 1 THz..Memory 1 Zettabyte.🕺</center></h1>
