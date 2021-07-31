@@ -3,6 +3,10 @@
 
 <p align = "center"><a herf = "https://t.me/Mrjokerlk_bot" alt = "Mrjoker"><img src = "https://telegra.ph/file/6525d89de5b72003d80fa.png" width = "900"></a></p>
 
+[![MRJOKER](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org)
+[![MRJOKER](https://forthebadge.com/images/badges/open-source.svg)](https://github.com/kjeymax/MR-JOKER_BOT)
+[![MRJOKER](https://img.shields.io/github/forks/kjeymax/MR-JOKER_BOT?color=Red%20&label=Github%20Fork&style=for-the-badge)](https://github.com/kjeymax/MR-JOKER_BOT)
+[![MRJOKER](https://img.shields.io/github/watchers/kjeymax/MR-JOKER_BOT?color=red&style=for-the-badge)](https://github.com/kjeymax/MR-JOKER_BOT)
 
 <h1 align ="center"> 𝍖𝍖𝍖𐒄Ɽ.ʝⰙƘƸⱤ𝍖𝍖𝍖</h1>
 <h1 align = "center">Yo,🤡♂️I'm Alive..I'm a super bot 🔥...🚴‍♂️Speed 1 THz..Memory 1 Zettabyte.🕺</center></h1>
@@ -150,5 +154,4 @@ sqldbtype://username:pw@hostname:port/db_name
 
 Enjoy Your Bot! 💝</h3> 
 
-[![MRJOKER](https://img.shields.io/github/forks/kjeymax/MR-JOKER_BOT?color=Red%20&label=Github%20Fork&style=for-the-badge)](https://github.com/kjeymax/MR-JOKER_BOT)
-[![MRJOKER](https://img.shields.io/github/watchers/kjeymax/MR-JOKER_BOT?color=red&style=for-the-badge)](https://github.com/kjeymax/MR-JOKER_BOT)
+
