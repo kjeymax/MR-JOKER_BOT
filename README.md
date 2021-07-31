@@ -3,8 +3,19 @@
 
 <p align = "center"><a herf = "https://t.me/Mrjokerlk_bot" alt = "Mrjoker"><img src = "https://telegra.ph/file/6525d89de5b72003d80fa.png" width = "900"></a></p>
 
-[![MRJOKER](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org)
-[![MRJOKER](https://forthebadge.com/images/badges/open-source.svg)](https://github.com/kjeymax/MR-JOKER_BOT)
+<p align = "center">
+<a href = "https://python.org">
+<img src = "https://forthebadge.com/images/badges/made-with-python.svg">
+</p>
+</a>
+
+<p align = "center">
+<a href = "https://github.com/kjeymax/MR-JOKER_BOT">
+<img src = "https://forthebadge.com/images/badges/open-source.svg">
+</p>
+</a>
+
+[![MRJOKER](https://forthebadge.com/images/badges/open-source.svg)](https://github.com/kjeymax/MR-JOKER_BOT)</br></br>
 [![MRJOKER](https://img.shields.io/github/forks/kjeymax/MR-JOKER_BOT?color=Red%20&label=Github%20Fork&style=for-the-badge)](https://github.com/kjeymax/MR-JOKER_BOT)
 [![MRJOKER](https://img.shields.io/github/watchers/kjeymax/MR-JOKER_BOT?color=red&style=for-the-badge)](https://github.com/kjeymax/MR-JOKER_BOT)
 
