@@ -29,7 +29,9 @@
 
 [![Contact me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/kavinduaj)
 
-##Starting the bot
+
+
+## Starting the bot
 
 <h3 align = "justify">Once you've setup your database and your configuration (see below) is complete, simply run:</h3>
 
