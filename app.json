@@ -4,11 +4,11 @@
       "keywords": [
          "telegram",
          "anime",
-         "group",
-         "manager",
+         "Group",
+         "Manager",
          "MrJoker"
       ],   
-   "repository": "https://github.com/akborana/VILLAIN_GROUP_BOT",
+   "repository": "https://github.com/kjeymax/MR-JOKER_BOT",
    "addons": [
       {
          "options": {
@@ -81,13 +81,13 @@
          "value": "-xyz"
       },
       "DEV_USERS": {
-         "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Villain support then keep the current ID's here at they are and add yours.",
+         "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Mr.Joker support then keep the current ID's here at they are and add yours.",
          "required": false,
          "value": "948247711"
       },
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
-         "required": false,
+         "required": true,
          "value": ""
       }, 
       "STRICT_GBAN": {
@@ -146,11 +146,7 @@
       "ALLOW_EXCL": {
          "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
          "value": "True"
-      },
-      "DONATION_LINK": {
-         "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to Akay",
-         "required": false,
-         "value": "https://www.paypal.me/xyz"
+
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
