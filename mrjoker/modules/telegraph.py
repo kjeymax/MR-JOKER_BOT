@@ -83,7 +83,7 @@ file_help = file_help.replace(".py", "")
 file_helpo = file_help.replace("_", " ")
 
 __help__ = """
- 🔹 /tp : Get Telegraph Link Of Replied Media
+ 🔹 /tm : Get Telegraph Link Of Replied Media
  🔹 /tt: Get Telegraph Link of Replied Text
 """
 
