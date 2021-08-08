@@ -14,10 +14,10 @@ from youtube_dl.utils import (
     XAttrMetadataError,
 )
 
-from mrjoker.events import register as saitama
+from mrjoker.events import register as mrjoker
 
 
-@saitama(pattern="^/yt(audio|video) (.*)")
+@mrjoker(pattern="^/yt(audio|video) (.*)")
 async def download_video(v_url):
     """ For .ytdl command, download media from YouTube and many other sites. """
     url = v_url.pattern_match.group(2)
