@@ -1,9 +1,14 @@
 import os
 import time
-
 import aiohttp
+import wget
+from telethon import events
+from mrjoker import telethn as bot
+from mrjoker.utils.uputils import humanbytes, time_formatter, progress
 
-from mrjoker.utils.uputils import humanbytes, time_formatter
+DOWNLOADPATH = "./" 
+
+from mrjoker.utils.uputils import humanbytes, time_formatter, progress
 
 
 async def download_file(url, file_name, message, start_time, bot):
@@ -25,13 +30,9 @@ async def download_coroutine(session, url, file_name, event, start, bot):
             return await response.release()
         await event.edit(
             """**Initiating Download**
-
 **🔗URL:** {}
-
 **📂File Name:** {}
-
 **🗃️File Size:** {}
-
 **© @lkhitech**""".format(
                 url,
                 os.path.basename(file_name).replace("%20", " "),
@@ -60,11 +61,8 @@ async def download_coroutine(session, url, file_name, event, start, bot):
                         if total_length < downloaded:
                             total_length = downloaded
                         current_message = """Downloading : {}%
-
 🔗 URL: {}
-
 📂 File Name: {}
-
 🗃️ File Size: {}
 📥 Downloaded: {}
 📉 ETA: {}""".format(
@@ -87,6 +85,55 @@ async def download_coroutine(session, url, file_name, event, start, bot):
                         print("Error", e)
                         # logger.info(str(e))
         return await response.release()
+
+
+@bot.on(events.NewMessage(pattern="/up"))
+async def up(event):
+    if event.reply_to_msg_id:
+        start = time.time()
+        url = await event.get_reply_message()
+        ilk = await event.respond("Downloading...📥")
+
+        try:
+            filename = os.path.join(DOWNLOADPATH, os.path.basename(url.text))
+            await download_file(url.text, filename, ilk, start, bot)
+        except Exception as e:
+            print(e)
+            await event.respond(f"Downloading Failed 🥴 \n\n**Error:** {e}")
+
+        await ilk.delete()
+
+        try:
+            orta = await event.respond("Uploading to Telegram...🤡")
+
+            dosya = await bot.upload_file(
+                filename,
+                progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
+                    progress(d, t, orta, start, "Uploading to Telegram...🤡")
+                ),
+            )
+
+            str(time.time() - start)
+            await bot.send_file(
+                event.chat.id,
+                dosya,
+                force_document=True,
+                caption=f"Uploaded By @mrjokerpro_bot",
+            )
+        except Exception as e:
+            traceback.print_exc()
+
+            print(e)
+            await event.respond(f"Uploading Failed 🥴 \n\n**Error:** {e}")
+
+        await orta.delete()
+
+    raise events.StopPropagation
+
+
+def main():
+    if not os.path.isdir(DOWNLOADPATH):
+        os.mkdir(DOWNLOADPATH)
 
 
 __help__ = """
