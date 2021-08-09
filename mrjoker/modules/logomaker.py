@@ -130,7 +130,7 @@ file_helpo = file_help.replace("_", " ")
 
 __help__ = """
  🔹 /jlogo <text> :  Create your logo with your name
- 🔹 /wlogo <text> :  Create your logo with your name
+ 🔹 /ylogo <text> :  Create your logo with your name
  🔹 /blogo <text> :  Create your logo with your name
  """
 __mod_name__ = "Logo 🖼"
