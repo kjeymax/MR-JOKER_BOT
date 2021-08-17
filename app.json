@@ -75,6 +75,14 @@
          "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
          "required": true,
          "value": "-xyz"
+            
+      "env": {
+      "OPENWEATHERMAP_ID": {
+         "description": "Go to https://home.openweathermap.org/api_keys",
+         "required": true,
+         "value": ""
+      },  
+            
       },
       "TIME_API_KEY": {
          "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
