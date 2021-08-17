@@ -234,4 +234,3 @@ from mrjoker.modules.helper_funcs.handlers import (
 tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler
 tg.MessageHandler = CustomMessageHandler
-© 2021 GitHub, Inc.
