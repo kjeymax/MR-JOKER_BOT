@@ -14,14 +14,14 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 1383845  # integer value, dont use ""
-    API_HASH = "0e3d2c299cc3c5cc26c283cecd2eb97c"
-    TOKEN = "1384019653:AAGeq9rGVQqlTcP45sWZDhW2oEQ2YZ8bmGs"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    BOT_USERNAME = "Mrjokerlk_bot"
+    API_ID = 1234568 # integer value, dont use ""
+    API_HASH = ""
+    TOKEN = ""  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    BOT_USERNAME = ""
     OWNER_ID = 1131653685   # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "kavinduaj"
-    ARQ_API_URL = "https://thearq.tech"
-    ARQ_API_KEY = "ULYTMW-MOFYPS-KLWEUW-KNQWVO-ARQ"
+    ARQ_API_URL = ""
+    ARQ_API_KEY = ""
     SUDO_USERS = 1131653685
     SUPPORT_USERS = 1131653685
     WHITELIST_USERS = 1131653685
@@ -66,7 +66,7 @@ class Config(object):
     BAN_STICKER = ""  # banhammer marie sticker id, the bot will send this sticker before banning or kicking a user in chat.
     ALLOW_EXCL = True  # Allow ! commands as well as / (Leave this to true so that blacklist can work)
     CASH_API_KEY = (
-        "GFO4UK7F4NGUMYTT"  # Get your API key from https://www.alphavantage.co/support/#api-key
+        "G"  # Get your API key from https://www.alphavantage.co/support/#api-key
     )
     TIME_API_KEY = "xyz"  # Get your API key from https://timezonedb.com/api
     WALL_API = (
