@@ -7,7 +7,8 @@ import spamwatch
 import telegram.ext as tg
 from pyrogram import Client, errors
 from telethon import TelegramClient
-
+from aiohttp import ClientSession
+from Python_ARQ import ARQ
 
 StartTime = time.time()
 
@@ -31,6 +32,7 @@ ENV = bool(os.environ.get("ENV", False))
 
 if ENV:
     TOKEN = os.environ.get("TOKEN", None)
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
 
     try:
         OWNER_ID = int(os.environ.get("OWNER_ID", None))
@@ -43,6 +45,9 @@ if ENV:
     try:
         DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
         DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "").split())
+        SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "").split())
+        SUPPORT_USERS = set(int(x) for x in os.environ.get("SUPPORT_USERS", "").split())
+        WHITELIST_USERS = set(int(x) for x in os.environ.get("WHITELIST_USERS", "").split())
     except ValueError:
         raise Exception("Your sudo or dev users list does not contain valid integers.")
 
@@ -64,6 +69,8 @@ if ENV:
     INFOPIC = bool(os.environ.get("INFOPIC", False))
     EVENT_LOGS = os.environ.get("EVENT_LOGS", None)
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
+    ARQ_API_URL = os.environ.get("ARQ_API_URL", None)
+    ARQ_API_KEY = os.environ.get("ARQ_API_KEY", None)
     URL = os.environ.get("URL", "")  # Does not contain token
     PORT = int(os.environ.get("PORT", 5000))
     CERT_PATH = os.environ.get("CERT_PATH")
@@ -80,18 +87,20 @@ if ENV:
     ALLOW_EXCL = os.environ.get("ALLOW_EXCL", False)
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
+    REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
     AI_API_KEY = os.environ.get("AI_API_KEY", None)
     WALL_API = os.environ.get("WALL_API", None)
-    REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
     YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
     REPOSITORY = os.environ.get("REPOSITORY", "")
     REDIS_URL = os.environ.get("REDIS_URL")
+    MONGO_URI = os.environ.get("MONGO_DB_URI", None)
     IBM_WATSON_CRED_URL = os.environ.get("IBM_WATSON_CRED_URL", None)
     IBM_WATSON_CRED_PASSWORD = os.environ.get("IBM_WATSON_CRED_PASSWORD", None)
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
+    OPENWEATHERMAP_ID = os.environ.get("OPENWEATHERMAP_ID", "")
 
     try:
         WHITELIST_CHATS = set(
@@ -109,6 +118,7 @@ else:
     from mrjoker.config import Development as Config
 
     TOKEN = Config.TOKEN
+    BOT_USERNAME = Config.BOT_USERNAME
 
     try:
         OWNER_ID = int(Config.OWNER_ID)
@@ -143,36 +153,47 @@ else:
     WEBHOOK = Config.WEBHOOK
     URL = Config.URL
     PORT = Config.PORT
+    ARQ_API = Config.ARQ_API_KEY
     CERT_PATH = Config.CERT_PATH
     API_ID = Config.API_ID
     API_HASH = Config.API_HASH
 
     DB_URI = Config.SQLALCHEMY_DATABASE_URI
+    REDIS_URI = Config.REDIS_URI
     DONATION_LINK = Config.DONATION_LINK
+    SUDO_USERS = Config.SUDO_USERS
+    WHITELIST_USERS = Config.WHITELIST_USERS 
+    SUPPORT_USERS = Config.SUPPORT_USERS
     LOAD = Config.LOAD
     NO_LOAD = Config.NO_LOAD
     DEL_CMDS = Config.DEL_CMDS
     STRICT_GBAN = Config.STRICT_GBAN
     WORKERS = Config.WORKERS
+    
     BAN_STICKER = Config.BAN_STICKER
     ALLOW_EXCL = Config.ALLOW_EXCL
     CASH_API_KEY = Config.CASH_API_KEY
     TIME_API_KEY = Config.TIME_API_KEY
     AI_API_KEY = Config.AI_API_KEY
     WALL_API = Config.WALL_API
+    REM_BG_API_KEY = Config.REM_BG_API_KEY
     SUPPORT_CHAT = Config.SUPPORT_CHAT
     SPAMWATCH_SUPPORT_CHAT = Config.SPAMWATCH_SUPPORT_CHAT
     SPAMWATCH_API = Config.SPAMWATCH_API
     YOUTUBE_API_KEY = Config.YOUTUBE_API_KEY
     INFOPIC = Config.INFOPIC
     TEMP_DOWNLOAD_DIRECTORY = Config.TEMP_DOWNLOAD_DIRECTORY
-    REM_BG_API_KEY = Config.REM_BG_API_KEY
-
+    ARQ_API_URL = Config.ARQ_API_URL
+    ARQ_API_KEY = Config.ARQ_API_KEY
+    MONGO_URI = Config.MONGO_DB_URI
+    OPENWEATHERMAP_ID = Config.OPENWEATHERMAP_ID
+    
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
     except ValueError:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
+        
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
 
@@ -183,12 +204,19 @@ else:
     sw = spamwatch.Client(SPAMWATCH_API)
 
 
+print("[INFO]: INITIALZING AIOHTTP SESSION")
+aiohttpsession = ClientSession()    
+    
+#install arq
+print("[INFO]: INITIALIZING ARQ CLIENT")
+arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
+
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("lkhitech", API_ID, API_HASH)
 pbot = Client("mrjoker", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
-
+apps = [pbot]
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
 DEV_USERS = list(DEV_USERS)
 WOLVES = list(WOLVES)
@@ -206,3 +234,4 @@ from mrjoker.modules.helper_funcs.handlers import (
 tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler
 tg.MessageHandler = CustomMessageHandler
+© 2021 GitHub, Inc.
