@@ -176,6 +176,11 @@
          "required": false,
          "value": ""
       }
+      "MONGO_DB_URI": {
+         "description": "Creater MongoDB https://www.mongodb.com/ ",
+         "required": false,
+         "value": ""
+      }
    },
    "keywords": [
       "telegram",
