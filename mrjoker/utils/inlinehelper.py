@@ -74,7 +74,7 @@ async def alive_function(answers):
     )
 
     msg = f"""
-**[Cutiepii 🤡](https://github.com/kjeymax/MR-JOKER_BOT):**
+**[MR.JOKER 🤡](https://github.com/kjeymax/MR-JOKER_BOT):**
 **MainBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `3.9`
