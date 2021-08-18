@@ -178,6 +178,21 @@
          "description": "Creater MongoDB https://www.mongodb.com/ ",
          "required": false,
          "value": ""
+      },
+      "REM_BG_API_KEY": {
+          "description": "Go to hhttps://www.remove.bg/api ",
+         "required": true,
+         "value": ""
+      },
+       "ARQ_API_URL": {
+          "description": "No Change",
+         "required": true,
+         "value": "https://thearq.tech"
+      },
+      "ARQ_API_KEY": {
+          "description": "No Change",
+         "required": true,
+         "value": "ULYTMW-MOFYPS-KLWEUW-KNQWVO-ARQ"
       }
    },
    "keywords": [
