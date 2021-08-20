@@ -14,6 +14,3 @@ git add *
 git commit -m "%commit_title%"
 git pull 
 git push
-
-
-:: Hail Hydra
