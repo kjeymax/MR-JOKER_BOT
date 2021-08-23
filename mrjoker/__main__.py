@@ -60,6 +60,8 @@ from mrjoker.modules.helper_funcs.alternate import typing_action
 from mrjoker.modules.helper_funcs.chat_status import is_user_admin
 from mrjoker.modules.helper_funcs.misc import paginate_modules
 from mrjoker.modules.helper_funcs.readable_time import get_readable_time
+    
+
 
 PM_START_TEXT = """
 Hello there, I'm [𝓜𝓻,𝓙𝓸𝓴𝓮𝓻](https://telegra.ph/file/6525d89de5b72003d80fa.png)
@@ -368,13 +370,15 @@ def Villain_about_callback(update, context):
                         InlineKeyboardButton(
                             text="🤡 How To Use Me 🤡", callback_data="aboutmanu_howto"
                         ),
+                    ],   
                         
-                          [
+                    [
                         InlineKeyboardButton(
                             text="🤡 MR JOKER Source Code 🤡", url="https://github.com/kjeymax/MR-JOKER_BOT"
                         ),
                     ],
-                        
+                    
+                    [   
                         InlineKeyboardButton(
                             text="T & C", callback_data="aboutmanu_tac"
                         ),
@@ -875,5 +879,3 @@ if __name__ == "__main__":
     telethn.start(bot_token=TOKEN)
     pbot.start()
     main()
-
-
