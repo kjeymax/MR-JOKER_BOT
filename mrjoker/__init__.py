@@ -76,6 +76,7 @@ if ENV:
     CERT_PATH = os.environ.get("CERT_PATH")
     API_ID = os.environ.get("API_ID", None)
     API_HASH = os.environ.get("API_HASH", None)
+    STRING_SESSION = os.environ.get("STRING_SESSION", None)
     DB_URI = os.environ.get("DATABASE_URL")
     DONATION_LINK = os.environ.get("DONATION_LINK")
     LOAD = os.environ.get("LOAD", "").split()
@@ -157,6 +158,7 @@ else:
     CERT_PATH = Config.CERT_PATH
     API_ID = Config.API_ID
     API_HASH = Config.API_HASH
+    STRING_SESSION = Config.STRING_SESSION 
 
     DB_URI = Config.SQLALCHEMY_DATABASE_URI
     REDIS_URI = Config.REDIS_URI
@@ -214,6 +216,7 @@ arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("lkhitech", API_ID, API_HASH)
 pbot = Client("mrjoker", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+#mbot = Client("mjbot", session_name=STRING_SESSION, api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 apps = [pbot]
