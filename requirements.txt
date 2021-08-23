@@ -65,3 +65,5 @@ motor
 pykeyboard
 asyncio
 ujson
+html_telegraph_poster
+apscheduler
