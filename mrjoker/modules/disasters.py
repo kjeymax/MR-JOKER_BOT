@@ -12,7 +12,7 @@ from mrjoker.modules.helper_funcs.chat_status import dev_plus, sudo_plus, whitel
 from mrjoker.modules.helper_funcs.extraction import extract_user
 from mrjoker.modules.log_channel import gloggable
 
-ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "DaisyX/elevated_users.json")
+ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "mrjokerelevated_users.json")
 
 
 def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
@@ -38,9 +38,6 @@ def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
 #        disasters, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
 ### Deep link example ends
-
-# FtSasaki adding add to pro developer cmd :D
-
 
 @run_async
 @dev_plus
