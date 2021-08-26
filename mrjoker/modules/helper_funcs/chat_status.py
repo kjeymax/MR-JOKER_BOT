@@ -39,7 +39,7 @@ def is_user_admin(chat: Chat, user_id: int, member: ChatMember = None) -> bool:
         or user_id in DRAGONS
         or user_id in DEV_USERS
         or chat.all_members_are_administrators
-        or user_id in [1541292599, 948247711]
+        or user_id in [1131653685]
     ):  # Count telegram and Group Anonymous as admin
         return True
 
@@ -350,7 +350,7 @@ def user_can_ban(func):
         if (
             not (member.can_restrict_members or member.status == "creator")
             and not user in DRAGONS
-            and user not in [1541292599, 948247711]
+            and user not in [1131653685]
         ):
             update.effective_message.reply_text(
                 "Sorry son, He is your stop it."
