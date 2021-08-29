@@ -120,7 +120,7 @@
       },
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
-         "required": false,
+         "required": true,
          "value": ""
       }, 
       "STRICT_GBAN": {
@@ -203,7 +203,26 @@
          "description": "Required for wallpaper. Get your's from https://wall.alphacoders.com/",
          "required": false,
          "value": ""
-      }
+      },
+       "ARQ_API_URL": {
+         "description": "Defult -> https://thearq.tech/",
+         "required": true,
+         "value": "https://thearq.tech/"
+      },
+      "ARQ_API_KEY": {
+         "description": "Start this boat https://t.me/ARQRobot. Get the key ",
+         "required": true,
+         "value": ""
+      },         
+      "REM_BG_API_KEY": {
+         "description": "Go to this site https://www.remove.bg/api#remove-background. Get your api key",
+         "required": true,
+         "value": ""
+      },
+      "GENIUS_API_TOKEN": {
+         "description": "Go to this site https://docs.genius.com/. Get your api token",
+         "required": false,
+         "value": ""         
       
    }
 }
