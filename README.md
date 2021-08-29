@@ -164,7 +164,7 @@ sqldbtype://username:pw@hostname:port/db_name
  - [Utah](https://github.com/minatouzuki/utah).
  - [WilliamButcherBot](https://github.com/thehamkercat/WilliamButcherBot)
  - [Alita_Robot](https://github.com/DivideProjects/Alita_Robot/)
- - [Saitama Robot(https://github.com/AnimeKaizoku/SaitamaRobot)
+ - [Saitama Robot](https://github.com/AnimeKaizoku/SaitamaRobot)
 
 <h3 align = "justify">Don't forget to star this repo if you liked it.</br></br>
 
