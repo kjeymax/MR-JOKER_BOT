@@ -28,7 +28,7 @@
 
 
 ## Deploy
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://www.herokucdn.com)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kjeymax/MR-JOKER_BOT)
 
 [![Deploy To Railway](https://railway.app/button.svg)](https://railway.app)
 
@@ -78,6 +78,10 @@ python3 -m mrjoker
 -   `AI_API_KEY`           : Make your bot talk using Intellivoid's chatbot API, [Get your key from](https://coffeehouse.intellivoid.net/)
 -   `BAN_STICKER`          : ID of the sticker you want to use when banning people
 -   `WALL_API`             : Required for wallpaper. [Get your's from](https://wall.alphacoders.com/)  
+-   `ARQ_API_URL`          : https://thearq.tech/ 👈 Fill in this way
+-   `ARQ_API_KEY`          : Start this boat https://t.me/ARQRobot. Get the key
+-   `REM_BG_API_KEY`       : Go to this site https://www.remove.bg/api#remove-background. Get your api key
+-    `GENIUS_API_TOKEN`    : Go to this site https://docs.genius.com/. Get your api token
  
  
 ## Python dependencies
@@ -160,6 +164,7 @@ sqldbtype://username:pw@hostname:port/db_name
  - [Utah](https://github.com/minatouzuki/utah).
  - [WilliamButcherBot](https://github.com/thehamkercat/WilliamButcherBot)
  - [Alita_Robot](https://github.com/DivideProjects/Alita_Robot/)
+ - [Saitama Robot(https://github.com/AnimeKaizoku/SaitamaRobot)
 
 <h3 align = "justify">Don't forget to star this repo if you liked it.</br></br>
 
