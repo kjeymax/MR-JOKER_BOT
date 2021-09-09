@@ -76,3 +76,4 @@ python-arq
 opencv-python-headless
 pytube
 tldextract
+pretty-errors
