@@ -116,6 +116,7 @@ DATA_EXPORT = []
 CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 GDPR = []
+CMD_HELP = {}
 
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module("mrjoker.modules." + module_name)
