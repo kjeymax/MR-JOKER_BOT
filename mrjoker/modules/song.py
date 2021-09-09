@@ -5,7 +5,7 @@ import wget
 from pyrogram import filters
 
 from mrjoker import pbot as mrjoker 
-from mrjoker.services.dk import get_arg
+from mrjoker.utils.ut import get_arg
 
 
 @mrjoker.on_message(filters.command("saavn"))
