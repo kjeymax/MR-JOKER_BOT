@@ -33,6 +33,15 @@ __help__ = """
  🔹 `/encrypt` : Reply text for this command
  🔹 `/decrypt` : Reply text for this command
  
+** Heroku **
+
+ 🔹 `/set` : set new var
+ 🔹 `/see` : get current var
+ 🔹 `/del` : delete var
+ 🔹 `/usage` : Get your account Dyno Usage
+ 🔹 `/usage` : Get your account Dyno Usage
+ 🔹 `/logs` : Get your App logz
+ 
 ** More **
 
  🔹 `/phone` <tp no> : Track Phone no
