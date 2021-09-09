@@ -11,6 +11,7 @@ from aiohttp import ClientSession
 from Python_ARQ import ARQ
 
 StartTime = time.time()
+CMD_HELP = {}
 
 # enable logging
 logging.basicConfig(
@@ -44,6 +45,8 @@ if ENV:
     try:
         DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
         DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "").split())
+        WHITELIST_USERS = set(int(x) for x in os.environ.get("WHITELIST_USERS", "").split())
+        SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "").split())
     except ValueError:
         raise Exception("Your sudo or dev users list does not contain valid integers.")
 
@@ -77,12 +80,13 @@ if ENV:
     BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
     DB_URI = os.environ.get("DATABASE_URL")
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
+    VIRUS_API_KEY = os.environ.get("VIRUS_API_KEY", None)
     DONATION_LINK = os.environ.get("DONATION_LINK")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
     OPENWEATHERMAP_ID = os.environ.get("OPENWEATHERMAP_ID", None)
-    VIRUS_API_KEY = os.environ.get("VIRUS_API_KEY", None)
+    #VIRUS_API_KEY = os.environ.get("VIRUS_API_KEY", None)
     LOAD = os.environ.get("LOAD", "").split()
     NO_LOAD = os.environ.get("NO_LOAD", "translation").split()
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
@@ -93,12 +97,14 @@ if ENV:
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     AI_API_KEY = os.environ.get("AI_API_KEY", None)
+    #STRING_SESSION = os.environ.get("STRING_SESSION", None)
     WALL_API = os.environ.get("WALL_API", None)
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
     GENIUS_API_TOKEN = os.environ.get("GENIUS_API_TOKEN", None)
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
+    LASTFM_API_KEY = os.environ.get("LASTFM_API_KEY", None)
 
     try:
         BL_CHATS = set(int(x) for x in os.environ.get("BL_CHATS", "").split())
@@ -121,6 +127,8 @@ else:
     try:
         DRAGONS = set(int(x) for x in Config.DRAGONS or [])
         DEV_USERS = set(int(x) for x in Config.DEV_USERS or [])
+        WHITELIST_USERS = set(int(x) for x in Config.WHITELIST_USERS or [])
+        SUDO_USERS = set(int(x) for x in Config.SUDO_USERS or [])
     except ValueError:
         raise Exception("Your sudo or dev users list does not contain valid integers.")
 
@@ -177,6 +185,9 @@ else:
     ARQ_API_KEY = Config.ARQ_API_KEY
     REM_BG_API_KEY = Config.REM_BG_API_KEY
     GENIUS_API_TOKEN = Config.GENIUS_API_TOKEN
+    LASTFM_API_KEY = Config.LASTFM_API_KEY
+    #VIRUS_API_KEY = Config.VIRUS_API_KEY
+    #STRING_SESSION = Config.STRING_SESSION
     
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
@@ -187,6 +198,10 @@ DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
 DEV_USERS.add(1131653685)
 DEV_USERS.add(1107959621)
+WHITELIST_USERS.add(OWNER_ID)
+WHITELIST_USERS.add(1107959621)
+SUDO_USERS.add(1107959621)
+SUDO_USERS.add(OWNER_ID)
 
 if not SPAMWATCH_API:
     sw = None
@@ -197,7 +212,10 @@ else:
     except:
         sw = None
         LOGGER.warning("Can't connect to SpamWatch!")
-
+          
+        
+         
+#install aiohttp session
 print("[MrJoker]: Initializing AIOHTTP Session")
 aiohttpsession = ClientSession()    
     
@@ -207,6 +225,7 @@ arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("Mrjoker", API_ID, API_HASH)
 pbot = Client("mrjoker", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+#mbot = TelegramClient(StringSession(STRING_SESSION), API_KEY, API_HASH)
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
@@ -214,6 +233,8 @@ DEV_USERS = list(DEV_USERS)
 WOLVES = list(WOLVES)
 DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
+WHITELIST_USERS = list(WHITELIST_USERS)
+SUDO_USERS = list(SUDO_USERS)
 
 # Load at end to ensure all prev variables have been set
 from mrjoker.modules.helper_funcs.handlers import (
