@@ -28,6 +28,11 @@ __help__ = """
  🔹 `/square` : square Text
  🔹 `/blue` : Blues text
  
+** Encrypt **
+
+ 🔹 `/encrypt` : Reply text for this command
+ 🔹 `/decrypt` : Reply text for this command
+ 
 ** More **
 
  🔹 `/phone` <tp no> : Track Phone no
