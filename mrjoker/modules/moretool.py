@@ -3,11 +3,6 @@ __help__ = """
 
  🔹 `/gps` <Place> : Show Location on a map
  
- ** Blue Cleaner **
-
- 🔹 `/cleanblue on` : Turn bluetext cleaner on
- 🔹 `/cleanblue off` : Turn bluetext cleaner off
- 
  ** Send **
 
  🔹 `/snd` <Text> : Message like the bot
