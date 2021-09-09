@@ -161,7 +161,9 @@ sqldbtype://username:pw@hostname:port/db_name
 [![HITECH](https://img.shields.io/badge/LKHITECH-Group-red?style=for-the-badge&logo=telegram)](https://telegram.dog/hitechlkgroup)</br></br>
 [![CONTACT ME](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/kavinduaj)
 
-
+## Discussions
+<p align="Center">
+<a href="https://github.com/kjeymax/MR-JOKER_BOT/discussions" alt="Mr Joker"> <img src="https://img.shields.io/badge/%F0%9F%A4%A1-Mr%20Joker%20Discussions-9cf" /> </a>
 
 ## Credits
 
