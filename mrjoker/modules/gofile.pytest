@@ -1,0 +1,64 @@
+import asyncio
+import os
+import requests
+import time
+
+from requests import post, get
+from mrjoker import pbot
+from telethon.sync import events, Button
+#from multiupload.fsub import *
+from mrjoker.utils.dl import downloader, humanbytes
+from mrjoker import SUPPORT_CHAT, EVENT_LOGS
+
+@pbot.on(events.NewMessage(pattern='^/gofile'))
+async def gofile(event):
+	user_id = event.sender_id
+	if event.is_private and not await check_participant(user_id, f'@{Config.SUPPORT_CHAT}', event):
+		return
+	if event.reply_to_msg_id:
+		pass
+	else:
+		return await event.edit("Please Reply to File")
+
+	async with mrjoker.action(event.chat_id, 'typing'):
+		await asyncio.sleep(2)
+	msg = await event.reply("**Processing...**")
+	mj = await event.get_reply_message()
+
+
+	## LOGGING TO A CHANNEL
+	xx = await event.get_chat()
+	reqmsg = f'''Req User: [{xx.first_name}](tg://user?id={xx.id})
+FileName: {mj.file.name}
+FileSize: {humanbytes(mj.file.size)}
+#GOFILE'''
+	await mj.send_message(Config.EVENT_LOGS, reqmsg)
+
+	result = await downloader(
+		f"downloads/{mj.file.name}",
+		mj.media.document,
+		msg,
+		time.time(),
+		f"**🏷 Downloading...**\n➲ **File Name:** {mj.file.name}",
+	)
+
+	async with mrjoker.action(event.chat_id, 'document'):
+		await msg.edit("Now Uploading to GoFile")
+		url = "https://api.gofile.io/getServer"
+		r = get(url)
+
+		url2 = f"https://{r.json()['data']['server']}.gofile.io/uploadFile"
+		r2 = post(url2, files={'file': open(f'{result.name}','rb')})
+	await mrjoker.action(event.chat_id, 'cancel')
+
+	la = f'''File Uploaded successfully !!
+Server: GoFile
+**~ File name:** __{mj.file.name}__
+**~ File size:** __{humanbytes(mj.file.size)}__
+NOTE: Files will be deleted after 10 days of inactivity'''
+	await msg.edit(la, buttons=(
+		[Button.url('📦 Download', r2.json()["data"]["downloadPage"])],
+		[Button.url('Support Chat 💭', 't.me/lkhitech')]
+		))
+
+	os.remove(result.name)
