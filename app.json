@@ -75,7 +75,7 @@
       },
       "HEROKU_APP_NAME": {
         "description": "Enter the Heroku app name here (Must an exact same name with your input above).",
-        "required": false
+        "required": true
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
@@ -129,7 +129,7 @@
          "required": false,
          "value": "1131653685"
       },
-      "sw_api": {
+      "SPAMWATCH_SUPPORT_CHAT": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
          "required": true,
          "value": ""
@@ -170,7 +170,7 @@
       "PORT": {
          "description": "Port to use for your webhooks. Better leave this as it is on heroku",
          "required": false,
-         "value": ""
+         "value": "5000"
       },
       "URL": {
          "description": "The Heroku App URL :-  https://<appname>.herokuapp.com/",
@@ -180,7 +180,7 @@
       "No_LOAD": {
          "description": "Dont load these modules cause they shit, space separation",
          "required": false,
-         "value": "rss"
+         "value": ""
       }, 
       "BL_CHATS": {
          "description": "List of chats you want blacklisted.",
