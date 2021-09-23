@@ -360,7 +360,7 @@ __help__ = """
  🔹 `/chatbot` [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
  🔹 `/chatbot EN `: Enables English only chatbot
  
-Powerd by : [Luna ChatBot](https://github.com/TheHamkerCat/LunaChatBot)
+Powered by : [Luna ChatBot](https://github.com/TheHamkerCat/LunaChatBot)
 
 """
 
