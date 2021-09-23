@@ -14,10 +14,10 @@ async def song(client, message):
     message.from_user["id"]
     args = get_arg(message) + " " + "song"
     if args.startswith(" "):
-        await message.reply("<b>Enter song name❗</b>")
+        await message.reply("**Enter song name❗**")
         return ""
     m = await message.reply_text(
-        "Downloading your song,\nPlz wait ⏳️"
+        "**Downloading your song,**\n**Plz wait** ⏳️"
     )
     try:
         r = requests.get(f"https://jostapi.herokuapp.com/saavn?query={args}")
@@ -56,7 +56,7 @@ async def fetch(url):
     return data
 
 async def download_song(url):
-    song_name = f"asuna.mp3"
+    song_name = f"mrjoker.mp3"
     async with aiohttp.ClientSession() as session:
         async with session.get(url) as resp:
             if resp.status == 200:
@@ -69,11 +69,11 @@ async def download_song(url):
 @mrjoker.on_message(filters.command("deezer"))
 async def deezer(_, message):
     if len(message.command) < 2:
-        await message.reply_text("Download Now Deezer")
+        await message.reply_text("**Downloading your song Deezer** ,\n**Plz wait** ⏳️")
         return
     text = message.text.split(None, 1)[1]
     query = text.replace(" ", "%20")
-    m = await message.reply_text("Searching...")
+    m = await message.reply_text("**Searching...**")
     try:
         r = await fetch(f"{ARQ}deezer?query={query}&count=1")
         title = r[0]["title"]
@@ -82,9 +82,9 @@ async def deezer(_, message):
     except Exception as e:
         await m.edit(str(e))
         return
-    await m.edit("Downloading...")
+    await m.edit("**Downloading...**")
     song = await download_song(url)
-    await m.edit("Uploading...")
+    await m.edit("**Uploading...**")
     await message.reply_audio(audio=song, title=title, performer=artist)
     os.remove(song)
     await m.delete()
@@ -138,19 +138,19 @@ async def song(client, message):
     user_id = message.from_user["id"]
     args = get_arg(message) + " " + "song"
     if args.startswith(" "):
-        await message.reply("Enter a song name. Check /help")
+        await message.reply("**Enter a song name.** **Check** `/help`")
         return ""
-    status = await message.reply("Processing...")
+    status = await message.reply("**Processing...**")
     video_link = yt_search(args)
     if not video_link:
-        await status.edit("Song not found😪.")
+        await status.edit("**Song not found😪**.")
         return ""
     yt = YouTube(video_link)
     audio = yt.streams.filter(only_audio=True).first()
     try:
         download = audio.download(filename=f"{str(user_id)}")
     except Exception as ex:
-        await status.edit("Failed to download song")
+        await status.edit("**Failed to download song**")
         LOGGER.error(ex)
         return ""
     os.rename(download, f"{str(user_id)}.mp3")
@@ -165,6 +165,74 @@ async def song(client, message):
     )
     await status.delete()
     os.remove(f"{str(user_id)}.mp3")
+    
+#---------------------------------------------------YT VIDEO-------------------------------------    
+    
+import asyncio
+import math
+import os
+import time
+import wget
+from random import randint
+from urllib.parse import urlparse
+
+import aiofiles
+import aiohttp
+import requests
+import youtube_dl
+from yt_dlp import YoutubeDL
+from pyrogram import Client, filters
+from pyrogram.errors import FloodWait, MessageNotModified
+from pyrogram.types import *
+from youtube_search import YoutubeSearch
+
+from mrjoker.conf import get_str_key
+from mrjoker import pbot
+
+@pbot.on_message(filters.command(["video"]))
+async def video(pbot, message):
+    ydl_opts = {
+        'format':'best',
+        'keepvideo':True,
+        'prefer_ffmpeg':False,
+        'geo_bypass':True,
+        'outtmpl':'%(title)s.%(ext)s',
+        'quite':True
+    }
+    query = " ".join(message.command[1:])
+    try:
+        results = YoutubeSearch(query, max_results=1).to_dict()
+        link = f"https://youtube.com{results[0]['url_suffix']}"
+        title = results[0]["title"][:40]
+        thumbnail = results[0]["thumbnails"][0]
+        thumb_name = f"thumb{title}.jpg"
+        thumb = requests.get(thumbnail, allow_redirects=True)
+        open(thumb_name, "wb").write(thumb.content)
+        duration = results[0]["duration"]
+        results[0]["url_suffix"]
+        results[0]["views"]
+        rby = message.from_user.mention
+    except Exception as e:
+        print(e)
+    try:
+        msg = await message.reply("**Deezer**")
+        with YoutubeDL(ydl_opts) as ytdl:
+            ytdl_data = ytdl.extract_info(link, download=True)
+            file_name = ytdl.prepare_filename(ytdl_data)
+    except Exception as e:
+        return await msg.edit(f"🚫 **error:** {str(e)}")
+    preview = wget.download(thumbnail)
+    await msg.edit("**Uploading Video...**")
+    await message.reply_video(
+        file_name,
+        duration=int(ytdl_data["duration"]),
+        thumb=preview,
+        caption=ytdl_data['title'])
+    try:
+        os.remove(file_name)
+        await msg.delete()
+    except Exception as e:
+        print(e)  
 
    
     
@@ -184,7 +252,7 @@ GENIUS = get_str_key("GENIUS_API_TOKEN", None)
 
 @pbot.on_message(filters.command(["lyric", "lyrics"]))
 async def _(client, message):
-    lel = await message.reply("Searching For Lyrics.....")
+    lel = await message.reply("**Searching For Lyrics.....**")
     query = message.text
     if not query:
         await lel.edit("`What I am Supposed to find `")
