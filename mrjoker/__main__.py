@@ -26,6 +26,8 @@ from mrjoker import (
 from mrjoker.modules import ALL_MODULES
 from mrjoker.modules.helper_funcs.chat_status import is_user_admin
 from mrjoker.modules.helper_funcs.misc import paginate_modules
+from mrjoker.modules.translations.strings import tld, tld_help 
+from mrjoker.modules.connection import connected
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -70,7 +72,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-
+MRJOKER_IMG = "https://www.linkpicture.com/q/Orange-and-White-Funny-Dating-Animated-Video-Presentation.gif"
 
 PM_START_TEXT = """
 *Hello there*, *I*'*m* [𝓜𝓻,𝓙𝓸𝓴𝓮𝓻](https://telegra.ph/file/6525d89de5b72003d80fa.png)
@@ -78,14 +80,15 @@ PM_START_TEXT = """
 🍃🔻 **Make sure you read** `INFO` **Section Below** 🔺🍃 
 """
 
-MRJOKER_IMG = "hhttps://telegra.ph/file/6525d89de5b72003d80fa.png"
-
 buttons = [
     [
         InlineKeyboardButton(
             text="🤡 𝗛𝗘𝗟𝗣 🤡", callback_data="help_back"),
     ],
-
+   # [
+     #   InlineKeyboardButton(
+     #       text ="Language", callback_data="set_lang_"),
+    #],
     [
         InlineKeyboardButton(text="🚀 𝗜𝗡𝗙𝗢 🚀", callback_data="mrjoker_"),
         InlineKeyboardButton(
@@ -349,7 +352,8 @@ def help_button(update, context):
 
     except BadRequest:
         pass
-
+    
+    
 
 @run_async
 def mrjoker_about_callback(update, context):
@@ -451,7 +455,7 @@ def mrjoker_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🇱𝗟𝗢𝗚'ꜱ 🤡", url="https://t.me/mrjokerloggroup"),
+                    InlineKeyboardButton(text="𝗟𝗢𝗚'ꜱ 🤡", url="https://t.me/mrjokerloggroup"),
                  ],
                  [
                     InlineKeyboardButton(text="𝗦𝗨𝗣𝗣𝗢𝗥𝗧 👥", url= "https://t.me/hitechlkgroup"),
@@ -835,7 +839,11 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Using long polling.🤡")
+        LOGGER.info("""
+----------------------------
+| Mr.Joker Bot Started.🤡 |
+----------------------------
+""")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
