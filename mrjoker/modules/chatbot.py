@@ -1,23 +1,23 @@
 import re
-
 import emoji
-
-IBM_WATSON_CRED_URL = "https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/bd6b59ba-3134-4dd4-aff2-49a79641ea15"
-IBM_WATSON_CRED_PASSWORD = "UQ1MtTzZhEsMGK094klnfa-7y_4MCpJY1yhd52MXOo3Y"
 url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
 import re
-
 import aiohttp
-from google_trans_new import google_translator
-from pyrogram import filters
 
-from mrjoker import BOT_ID
+from asyncio import gather, get_event_loop, sleep
+from googletrans import Translator as google_translator
+from pyrogram import filters, idle
+
+from mrjoker import BOT_ID, pbot as mrjoker
 from mrjoker.hextra.aichat import add_chat, get_session, remove_chat
 from mrjoker.pyro.pluginshelper import admins_only, edit_or_reply
-from mrjoker import pbot as mrjoker
 
 translator = google_translator()
-import requests
+
+
+async def lunaQuery(query: str, user_id: int):
+    luna = await arq.luna(query, user_id)
+    return luna.result
 
 
 def extract_emojis(s):
@@ -35,18 +35,28 @@ async def fetch(url):
                         data = await resp.text()
             return data
     except:
-        print("AI response Timeout")
+        print("Mr.Joker AI response Timeout")
         return
 
 
 mrjoker_chats = []
 en_chats = []
 
+from Python_ARQ import ARQ
+from aiohttp import ClientSession
+
+ARQ_API_URL = "https://thearq.tech"
+ARQ_API_KEY = "ULYTMW-MOFYPS-KLWEUW-KNQWVO-ARQ"
+
+aiohttpsession = ClientSession()
+arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
+
+
 @mrjoker.on_message(
     filters.command("chatbot") & ~filters.edited & ~filters.bot & ~filters.private
 )
 @admins_only
-async def hmm(_, message):
+async def kaj(_, message):
     global mrjoker_chats
     if len(message.command) != 2:
         await message.reply_text(
@@ -59,20 +69,20 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("mrjoker AI Already Activated In This Chat")
+            await lel.edit("Mr.JokerAI Already Activated In This Chat")
             return
         await lel.edit(
-            f"mrjoker AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"Mr.Joker AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("mrjoker AI Was Not Activated In This Chat")
+            await lel.edit("Mr.Joker AI Was Not Activated In This Chat")
             return
         await lel.edit(
-            f"mrjoker AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"Mr.Joker AI Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -87,7 +97,17 @@ async def hmm(_, message):
             "I only recognize `/chatbot on` and /chatbot `off only`"
         )
 
+@mrjoker.on_message(filters.command("repo") & ~filters.edited)
+async def repo(_, message):
+    await message.reply_text(
+        "[GitHub](https://github.com/kjeymax/MR-JOKER_BOT)"
+        + " | [HITECH Group](t.me/hitechlkgroup)",
+        disable_web_page_preview=True,
+    )
 
+        
+        
+        
 @mrjoker.on_message(
     filters.text
     & filters.reply
@@ -95,9 +115,9 @@ async def hmm(_, message):
     & ~filters.edited
     & ~filters.via_bot
     & ~filters.forwarded,
-    group=2,
+    group=69,
 )
-async def hmm(client, message):
+async def kaj(client, message):
     if not get_session(int(message.chat.id)):
         return
     if not message.reply_to_message:
@@ -115,20 +135,14 @@ async def hmm(client, message):
     if chat_id in en_chats:
         test = msg
         test = test.replace("mrjoker", "Aco")
-        test = test.replace("mrjoker", "Aco")
-        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@Mrjokerlk_bot&ownername=@kavinduaj"
+        test = test.replace("Mrjoker", "Aco")
+        response = await lunaQuery(
+            test, message.from_user.id if message.from_user else 0
+        )
+        response = response.replace("Aco", "Mrjoker")
+        response = response.replace("aco", "Mrjoker")
 
-        try:
-            r = requests.request("GET", url=URL)
-        except:
-            return
-
-        try:
-            result = r.json()
-        except:
-            return
-
-        pro = result["message"]
+        pro = response
         try:
             await mrjoker.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
@@ -166,32 +180,31 @@ async def hmm(client, message):
             # print (rm)
         try:
             lan = translator.detect(rm)
+            lan = lan.lang
         except:
             return
         test = rm
         if not "en" in lan and not lan == "":
             try:
-                test = translator.translate(test, lang_tgt="en")
+                test = translator.translate(test, dest="en")
+                test = test.text
             except:
                 return
-        # test = emoji.demojize(test.strip())
-        
-        test = test.replace("mrjoker", "Aco")
-        test = test.replace("mrjoker", "Aco")
-        URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@Mrjokerlk_bot&ownername=@kavinduaj"
-        try:
-            r = requests.request("GET", url=URL)
-        except:
-            return
 
-        try:
-            result = r.json()
-        except:
-            return
-        pro = result["message"]
+        test = test.replace("mrjoker", "Aco")
+        test = test.replace("Mrjoker", "Aco")
+        response = await lunaQuery(
+            test, message.from_user.id if message.from_user else 0
+        )
+        response = response.replace("Aco", "Mrjoker")
+        response = response.replace("aco", "Mrjoker")
+        response = response.replace("Luna", "Mrjoker")
+        response = response.replace("luna", "Mrjoker")
+        pro = response
         if not "en" in lan and not lan == "":
             try:
-                pro = translator.translate(pro, lang_tgt=lan[0])
+                pro = translator.translate(pro, dest=lan)
+                pro = pro.text
             except:
                 return
         try:
@@ -238,33 +251,28 @@ async def kaj(client, message):
         # print (rm)
     try:
         lan = translator.detect(rm)
+        lan = lan.lang
     except:
         return
     test = rm
     if not "en" in lan and not lan == "":
         try:
-            test = translator.translate(test, lang_tgt="en")
+            test = translator.translate(test, dest="en")
+            test = test.text
         except:
             return
 
-    # test = emoji.demojize(test.strip())
-
     test = test.replace("mrjoker", "Aco")
-    test = test.replace("mrjoker", "Aco")
-    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@Mrjokerlk_bot&ownername=@kavinduaj"
-    try:
-        r = requests.request("GET", url=URL)
-    except:
-        return
+    test = test.replace("Mrjoker", "Aco")
 
-    try:
-        result = r.json()
-    except:
-        return
+    response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
+    response = response.replace("Aco", "Mrjoker")
+    response = response.replace("aco", "Mrjoker")
 
-    pro = result["message"]
+    pro = response
     if not "en" in lan and not lan == "":
-        pro = translator.translate(pro, lang_tgt=lan[0])
+        pro = translator.translate(pro, dest=lan)
+        pro = pro.text
     try:
         await mrjoker.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
@@ -273,7 +281,7 @@ async def kaj(client, message):
 
 
 @mrjoker.on_message(
-    filters.regex("mrjoker|mrjoker|mrjoker|mrjoker|mrjoker")
+    filters.regex("Mrjoker|mrjoker|mrjoker|MRJOKER|mrjoker")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -312,36 +320,31 @@ async def kaj(client, message):
         rm = re.sub(r"\[([^]]+)]\(\s*([^)]+)\s*\)", r"", msg)
     else:
         rm = msg
-        # print (rm)
+
     try:
         lan = translator.detect(rm)
+        lan = lan.lang
     except:
         return
     test = rm
     if not "en" in lan and not lan == "":
         try:
-            test = translator.translate(test, lang_tgt="en")
+            test = translator.translate(test, dest="en")
+            test = test.text
         except:
             return
 
-    # test = emoji.demojize(test.strip())
-
     test = test.replace("mrjoker", "Aco")
-    test = test.replace("mrjoker", "Aco")
-    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@Mrjokerlk_bot&ownername=@kavinduaj"
-    try:
-        r = requests.request("GET", url=URL)
-    except:
-        return
+    test = test.replace("Mrjoker", "Aco")
+    response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
+    response = response.replace("Aco", "Mrjoker")
+    response = response.replace("aco", "Mrjoker")
 
-    try:
-        result = r.json()
-    except:
-        return
-    pro = result["message"]
+    pro = response
     if not "en" in lan and not lan == "":
         try:
-            pro = translator.translate(pro, lang_tgt=lan[0])
+            pro = translator.translate(pro, dest=lan)
+            pro = pro.text
         except Exception:
             return
     try:
@@ -352,10 +355,13 @@ async def kaj(client, message):
 
 
 __help__ = """
-╔Mr.Joker AI IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
-╠ `/chatbot` [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
-╠ `/chatbot` `EN` : Enables English only chatbot
+*Mr.Joker AI Chatbot* 
+
+ 🔹 `/chatbot` [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
+ 🔹 `/chatbot EN `: Enables English only chatbot
  
+Powerd by : [Luna ChatBot](https://github.com/TheHamkerCat/LunaChatBot)
+
 """
 
-__mod_name__ = "Chatbot"
+__mod_name__ = "ChatBot"
