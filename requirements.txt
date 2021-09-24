@@ -1,11 +1,11 @@
 future
 emoji
+pyYAML>=5.1.2
 tzlocal==2.0
 pykeyboard
 lxml
 wget
 PyDictionary
-googletrans
 gtts
 faker
 beautifulsoup4
@@ -24,6 +24,7 @@ psutil
 aiohttp>=2.2.5
 Pillow>=4.2.0
 CurrencyConverter
+googletrans==3.1.0a0
 google_trans_new
 jikanpy
 speedtest-cli
@@ -50,6 +51,7 @@ TgCrypto
 Pyrogram
 youtube-dl
 youtube-search-python
+yt_dlp
 asyncio
 dateparser==1.0.0
 pymongo
@@ -78,3 +80,4 @@ tldextract
 cloudmersive_virus_api_client
 youtube_search
 pretty-errors
+git+https://github.com/python-telegram-bot/ptbcontrib.git
