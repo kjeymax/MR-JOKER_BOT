@@ -120,10 +120,10 @@ def totranslate(update: Update, context: CallbackContext):
 
     except IndexError:
         update.effective_message.reply_text(
-            "Reply to messages or write messages from other languages  for translating into the intended language\n\n"
+            "Reply to messages or write messages from other languages ​​for translating into the intended language\n\n"
             "Example: `/tr en-si` to translate from English to Sinhala\n"
             "Or use: `/tr si` for automatic detection and translating it into Sinhala.\n"
-            "See [List of Language Codes](t.me/mrjokerloggroup/4) for a list of language codes.",
+            "See [List of Language Codes](https://t.me/mrjokerloggroup/4) for a list of language codes.",
             parse_mode="markdown",
             disable_web_page_preview=True,
         )
@@ -132,10 +132,17 @@ def totranslate(update: Update, context: CallbackContext):
     else:
         return
 
+__help__ = """
+🔹 `/tr` or `/tl` (language code) as reply to a long message
+*Example:*
+🔹 `/tr en`*:* translates something to english
+🔹 `/tr si-en`*:* translates sinhala to english
+"""
 
 TRANSLATE_HANDLER = DisableAbleCommandHandler(["tr", "tl"], totranslate)
 
 dispatcher.add_handler(TRANSLATE_HANDLER)
 
+__mod_name__ = "G-Translator"
 __command_list__ = ["tr", "tl"]
 __handlers__ = [TRANSLATE_HANDLER]
