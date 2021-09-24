@@ -28,6 +28,8 @@ from mrjoker.modules.helper_funcs.chat_status import is_user_admin
 from mrjoker.modules.helper_funcs.misc import paginate_modules
 from mrjoker.modules.translations.strings import tld, tld_help 
 from mrjoker.modules.connection import connected
+from mrjoker.modules.system_stats import bot_sys_stats
+
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -74,6 +76,9 @@ def get_readable_time(seconds: int) -> str:
 
 MRJOKER_IMG = "https://www.linkpicture.com/q/Orange-and-White-Funny-Dating-Animated-Video-Presentation.gif"
 
+MRJOKER_AUD = "https://audio.jukehost.co.uk/kKJkdHgoMPeqdel4sDrEHr7m4U6o4Xya"
+
+
 PM_START_TEXT = """
 *Hello there*, *I*'*m* [𝓜𝓻,𝓙𝓸𝓴𝓮𝓻](https://telegra.ph/file/6525d89de5b72003d80fa.png)
 *I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managing your group*
@@ -95,6 +100,7 @@ buttons = [
             text=" 𝗕𝗔𝗦𝗜𝗖 𝗛𝗘𝗟𝗣 👮", callback_data="mrjoker_basichelp"
         ),
     ],
+    
     [
         InlineKeyboardButton(text="➕ 𝐀𝐃𝐃 𝐌𝐑.𝐉𝐎𝐊𝐄𝐂 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕", url="http://t.me/Mrjokerlk_bot?startgroup=true"),
     ],
@@ -219,6 +225,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
+ 
             )
     else:
         update.effective_message.reply_photo(
@@ -839,10 +846,12 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("""
-----------------------------
-| Mr.Joker Bot Started.🤡 |
-----------------------------
+        LOGGER.info("""      
+   
+░█▀▄▀█ ░█▀▀█ 　 ───░█ ░█▀▀▀█ ░█─▄▀ ░█▀▀▀ ░█▀▀█ 　 ░█▀▀█ ░█▀▀▀█ ▀▀█▀▀ 　 ░█▀▀▀█ ▀▀█▀▀ ─█▀▀█ ░█▀▀█ ▀▀█▀▀ 
+░█░█░█ ░█▄▄▀ 　 ─▄─░█ ░█──░█ ░█▀▄─ ░█▀▀▀ ░█▄▄▀ 　 ░█▀▀▄ ░█──░█ ─░█── 　 ─▀▀▀▄▄ ─░█── ░█▄▄█ ░█▄▄▀ ─░█── 
+░█──░█ ░█─░█ 　 ░█▄▄█ ░█▄▄▄█ ░█─░█ ░█▄▄▄ ░█─░█ 　 ░█▄▄█ ░█▄▄▄█ ─░█── 　 ░█▄▄▄█ ─░█── ░█─░█ ░█─░█ ─░█──             
+        
 """)
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
