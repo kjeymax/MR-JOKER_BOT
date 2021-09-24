@@ -51,17 +51,17 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1131653685"
+         "value": "1191668125"
       },      
       "SUDO_USERS": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1131653685"   
+         "value": "1191668125"   
       },      
       "WHITELIST_USERS": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1131653685"     
+         "value": "1191668125"     
      
       },
       "BOT_ID": {
@@ -79,12 +79,12 @@
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "kavinduaj"
+         "value": "FlashProSpeed"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: lkhitech. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "lkhitech"
+         "value": "codersUpdates"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
@@ -112,27 +112,27 @@
       "CASH_API_KEY": {
          "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
          "required": true,
-         "value": "-xyz"
+         "value": "GOP2A8CTKVDYUTAM"
       },
       "TIME_API_KEY": {
          "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
          "required": true,
-         "value": "-xyz"
+         "value": "J08DEUGT9EET"
       },
       "API_OPENWEATHER": {
         "description": "Get your own APPID from https://api.openweathermap.org/data/2.5/weather",
-        "value": "",
+        "value": "80309a67361c20ae4b8fc14f1fe65650",
         "required": false
       },
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": "1131653685"
+         "value": "1191668125"
       },
       "SPAMWATCH_SUPPORT_CHAT": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
          "required": true,
-         "value": ""
+         "value": "aJ_J1q8ep~tjAYhnk6qqbTVxjxqzWps~wC8oK1cQDTlzJW~j1P3sBscdOwrS0rQS"
       }, 
       "STRICT_GBAN": {
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
@@ -146,17 +146,17 @@
       "DEMONS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
-         "value": ""
+         "value": 1191668125""
       },
       "TIGERS": {
          "description": "A space separated list of user IDs who you wanna assign as tiger users.",
          "required": false,
-         "value": ""
+         "value": "1191668125"
       },
       "WOLVES": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": ""
+         "value": "1191668125"
       },
       "ENV": {
          "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
@@ -175,7 +175,7 @@
       "URL": {
          "description": "The Heroku App URL :-  https://<appname>.herokuapp.com/",
          "required": false,
-         "value": ""
+         "value": "https://<appname>.herokuapp.com/"
       },
       "No_LOAD": {
          "description": "Dont load these modules cause they shit, space separation",
@@ -194,7 +194,7 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
          "required": false,
-         "value": "https://t.me/kavinduaj"
+         "value": "https://t.me/FlashProSpeed"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
@@ -203,12 +203,12 @@
       "AI_API_KEY": {
       "description": "Make your bot talk using Intellivoid's chatbot API, get your key from https://coffeehouse.intellivoid.net/",
          "required": false,
-         "value": ""
+         "value": "26d3fbd740a771f917a8fa4b3f8fef080ea4a060b99080a9fd49cd9fb9de318fc1e2c588d669a79c6b6d9699babb3b5ff0fd0990787cbca026d98f30a566b09a"
       },      
       "BAN_STICKER": {
          "description": "ID of the sticker you want to use when banning people.",
          "required": false,
-         "value": ""
+         "value": "CAACAgIAAx0CWbl1VAACL7BhS1Nu7YRaqXPl4oxnRzyvKkPS2AACFwkAAmMr4gny9GaxB6qHXSEE"
       },
       "WALL_API": {
          "description": "Required for wallpaper. Get your's from https://wall.alphacoders.com/",
@@ -223,12 +223,12 @@
       "ARQ_API_KEY": {
          "description": "Start this boat https://t.me/ARQRobot. Get the key ",
          "required": true,
-         "value": ""
+         "value": "ARCPEU-OBJMUX-JOWUWL-RZXVJI-ARQ"
       },         
       "REM_BG_API_KEY": {
          "description": "Go to this site https://www.remove.bg/api#remove-background. Get your api key",
          "required": true,
-         "value": ""
+         "value": "WfEfGQ7WRpvHpXgXju5pQwxk"
       },
       "GENIUS_API_TOKEN": {
          "description": "Go to this site https://docs.genius.com/. Get your api token",
