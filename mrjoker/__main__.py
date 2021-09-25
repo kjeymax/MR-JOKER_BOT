@@ -420,6 +420,9 @@ def mrjoker_about_callback(update, context):
                     InlineKeyboardButton(text="𝗖𝗥𝗘𝗗𝗜𝗧 👨🏻‍💻", callback_data="mrjoker_credit"),
                  ],
                  [
+                    InlineKeyboardButton(text="𝐆𝐎 𝐈𝐍𝐋𝐈𝐍𝐄 ↗️", switch_inline_query_current_chat=""),
+                 ],
+                 [
                     InlineKeyboardButton(text="⬅️ 𝗕𝗔𝗖𝗞", callback_data="mrjoker_back"),
                  
                  ]
@@ -454,6 +457,7 @@ def mrjoker_about_callback(update, context):
                 [[InlineKeyboardButton(text= "⬅️ 𝗕𝗔𝗖𝗞", callback_data="mrjoker_basichelp")]]
             ),
         )
+        
     elif query.data == "mrjoker_support":
         query.message.edit_text(
             text="* MⷨRͬ.JOͦᴋⷦEͤRͬ support chats*"
@@ -467,10 +471,7 @@ def mrjoker_about_callback(update, context):
                  [
                     InlineKeyboardButton(text="𝗦𝗨𝗣𝗣𝗢𝗥𝗧 👥", url= "https://t.me/hitechlkgroup"),
                  ],
-                 [
-                    InlineKeyboardButton(text="𝗖𝗥𝗘𝗗𝗜𝗧", callback_data="mrjoker_basichelp"),
-                 
-                 ]
+
                 ]
             ),
         )
