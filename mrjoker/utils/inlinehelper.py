@@ -54,9 +54,9 @@ async def inline_help_func(__HELP__):
     answerss = [
         InlineQueryResultArticle(
             title="𝐈𝐧𝐥𝐢𝐧𝐞 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬",
-            description="𝗛𝗲𝗹𝗽 𝗥𝗲𝗹𝗮𝘁𝗲𝗱 𝗧𝗼 𝗜𝗻𝗹𝗶𝗻𝗲 𝗨𝘀𝗮𝗴𝗲.",
+            description="𝙈𝙧.𝙅𝙤𝙠𝙚𝙧 𝙃𝙚𝙡𝙥 𝙍𝙚𝙡𝙖𝙩𝙚𝙙 𝙏𝙤 𝙄𝙣𝙡𝙞𝙣𝙚 𝙐𝙨𝙖𝙜𝙚",
             input_message_content=InputTextMessageContent(__HELP__),
-            thumb_url="https://telegra.ph/file/db7774c281ec098b07b09.jpg",
+            thumb_url="https://telegra.ph/file/6525d89de5b72003d80fa.png",
             reply_markup=buttons,
         )
     ]
@@ -67,7 +67,6 @@ async def inline_help_func(__HELP__):
 async def alive_function(answers):
     buttons = InlineKeyboard(row_width=2)
     bot_state = "Dead" if not await app.get_me() else "Alive"
-    # ubot_state = 'Dead' if not await app2.get_me() else 'Alive'
     buttons.add(
         InlineKeyboardButton("🤡 𝐌𝐚𝐢𝐧 𝐁𝐨𝐭 🤡", url="https://t.me/mrjokerpro_bot"),
         InlineKeyboardButton("💥 𝗚𝗼 𝗜𝗻𝗹𝗶𝗻𝗲! 💥", switch_inline_query_current_chat=""),
@@ -85,9 +84,9 @@ async def alive_function(answers):
 """
     answers.append(
         InlineQueryResultArticle(
-            title="Alive",
-            description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/2934c4f5c0d7d2b882c88.jpg",
+            title="𝐀𝐥𝐢𝐯𝐞",
+            description="𝘾𝙝𝙚𝙘𝙠 𝘽𝙤𝙩❜𝙨 𝙎𝙩𝙖𝙩𝙨",
+            thumb_url="https://telegra.ph/file/6525d89de5b72003d80fa.png",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
