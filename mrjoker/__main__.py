@@ -368,8 +368,8 @@ def mrjoker_about_callback(update, context):
     if query.data == "mrjoker_":
         query.message.edit_text(
             
-            text=f"*🤡 Hi again!  The name's {dispatcher.bot.first_name} 🤡 \n\nAs  You I'm a next generational group management bot developed by HITECH🇱🇰 TEAM .* "
-            f"\n\n 🔥 Join [HITECH](https://t.me/lkhitech) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
+            text=f"*🤡 Hi again!  The name's {dispatcher.bot.first_name} 🤡 \n\nAs  You I'm a next generational group management bot developed by Alexander TEAM .* "
+            f"\n\n 🔥 Join [PM](https://t.me/FlashProSpeed) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/6525d89de5b72003d80fa.png)"
             f"\n\n Report error /bugs click the Button",
@@ -380,10 +380,10 @@ def mrjoker_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url="https://www.youtube.com/c/KavinduAj"
+                            text="🔷️coders updates", url="https://t.me/codersUpdates"
                         ),
                         InlineKeyboardButton(
-                            text="🇱🇰𝗛𝗜𝗧𝗘𝗖𝗛 𝗚𝗥𝗢𝗨𝗣", url="https://t.me/hitechlkgroup"
+                            text="🔷️coders support", url="https://t.me/codersSupport"
                         ),
                     ],
                     [InlineKeyboardButton(text="⬅️ 𝗕𝗔𝗖𝗞", callback_data="mrjoker_back")],
@@ -469,7 +469,7 @@ def mrjoker_about_callback(update, context):
                     InlineKeyboardButton(text="𝗟𝗢𝗚'ꜱ 🤡", url="https://t.me/mrjokerloggroup"),
                  ],
                  [
-                    InlineKeyboardButton(text="𝗦𝗨𝗣𝗣𝗢𝗥𝗧 👥", url= "https://t.me/hitechlkgroup"),
+                    InlineKeyboardButton(text="🔷️coders Support", url= "https://t.me/codersSupport"),
                  ],
 
                 ]
@@ -485,8 +485,8 @@ def mrjoker_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="𝗞𝗔𝗩𝗜𝗡𝗗𝗨 𝗔𝗝", url="t.me/kavinduaj"),
-                    InlineKeyboardButton(text="𝗔𝗦𝗛𝗘𝗡 𝗦𝗛𝗔𝗟𝗨𝗞𝗔", url="t.me/ashenwalk"),
+                    InlineKeyboardButton(text="𝗞𝗔𝗩𝗜𝗡𝗗𝗨 𝗔𝗝", url="t.me/black_snipers"),
+                    InlineKeyboardButton(text="𝗔𝗦𝗛𝗘𝗡 𝗦𝗛𝗔𝗟𝗨𝗞𝗔", url="t.me/FlashProSpeed"),
                  
                  ]
                 ]
@@ -500,7 +500,7 @@ def Source_about_callback(update, context):
     if query.data == "source_":
         query.message.edit_text(
             text=""" Hi..🤡 I'm *MⷨRͬ.JOͦᴋⷦEͤRͬ*
-                 \nHere is the [🤡Source Code🤡](https://github.com/kmacprt/MR-JOKER-BOT) .""",
+                 \nHere is the [🤡Source Code🤡](https://github.com/Randi356/MR-JOKER-BOT) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(

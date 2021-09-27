@@ -10,7 +10,7 @@
          "bot",
          "mrjoker"
       ],   
-   "repository": "https://github.com/kjeymax/MR-JOKER_BOT.git",
+   "repository": "https://github.com/Randi356/MR-JOKER_BOT.git",
    "addons": [
       {
          "options": {
@@ -51,17 +51,17 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1131653685"
+         "value": "1191668125"
       },      
       "SUDO_USERS": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1131653685"   
+         "value": "1191668125"   
       },      
       "WHITELIST_USERS": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1131653685"     
+         "value": "1191668125"     
      
       },
       "BOT_ID": {
@@ -79,12 +79,12 @@
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "kavinduaj"
+         "value": "FlashProSpeed"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: lkhitech. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "lkhitech"
+         "value": "codersUpdates"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
@@ -127,7 +127,7 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": "1131653685"
+         "value": "1191668125"
       },
       "SPAMWATCH_SUPPORT_CHAT": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
@@ -141,22 +141,22 @@
       "DRAGONS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
          "required": false,
-         "value": ""
+         "value": "1191668125"
       },
       "DEMONS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
-         "value": ""
+         "value": "1191668125"
       },
       "TIGERS": {
          "description": "A space separated list of user IDs who you wanna assign as tiger users.",
          "required": false,
-         "value": ""
+         "value": "1191668125"
       },
       "WOLVES": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": ""
+         "value": "1191668125"
       },
       "ENV": {
          "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
@@ -194,7 +194,7 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
          "required": false,
-         "value": "https://t.me/kavinduaj"
+         "value": "https://t.me/FlashProSpeed"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
