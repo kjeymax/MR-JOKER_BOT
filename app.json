@@ -57,6 +57,11 @@
          "description": "Your user ID as an integer.",
          "required": true,
          "value": "1131653685"   
+      },
+      "SUPPORT_USERS":{
+            "description": "Your user ID's as an integer.",
+            "required" : true,
+            "value" : "1131653685"
       },      
       "WHITELIST_USERS": {
          "description": "Your user ID as an integer.",
