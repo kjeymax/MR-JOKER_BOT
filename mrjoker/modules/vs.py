@@ -7,10 +7,12 @@ __help__ = """
 🔹 `/lyric` (song name) - lyric scrapper
 🔹 `/vjoin` - invite assistant join to your group
 🔹 `/vleave` - order assistant leave from your group
+
 *SUDO ONLY:*
 🔹 `/rmdl` - remove all downloaded files
 🔹 `/wipe` - remove all downloaded raw files
 🔹 `/leaveall` - order assistant leave from all group
+
 *HOW TO USE THIS BOT:*
 1.) first, add me to your group.
 2.) then promote me as admin and give all permissions except anonymous admin.
@@ -18,6 +20,7 @@ __help__ = """
 4.) turn on the voice chat first before start to stream video.
 5.) type /vplay (reply to video) to start streaming.
 6.) type /vstop to end the video streaming.
+
 💡 *Note: stream & stop command can only be executed by group admin only!*
 """
 
