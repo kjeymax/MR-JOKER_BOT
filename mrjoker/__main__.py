@@ -26,7 +26,6 @@ from mrjoker import (
 from mrjoker.modules import ALL_MODULES
 from mrjoker.modules.helper_funcs.chat_status import is_user_admin
 from mrjoker.modules.helper_funcs.misc import paginate_modules
-from mrjoker.modules.translations.strings import tld, tld_help 
 from mrjoker.modules.connection import connected
 from mrjoker.modules.system_stats import bot_sys_stats
 
