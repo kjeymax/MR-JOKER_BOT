@@ -22,6 +22,8 @@ __help__ = """
 6.) type /vstop to end the video streaming.
 
 💡 *Note: stream & stop command can only be executed by group admin only!*
+
+Powered By : [video-stream](https://github.com/levina-lab/video-stream)
 """
 
 __mod_name__ = "Video Stream"
