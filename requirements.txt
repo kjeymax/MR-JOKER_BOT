@@ -48,7 +48,7 @@ cachetools
 ujson
 pretty_errors
 TgCrypto
-Pyrogram
+pyrogram
 youtube-dl
 youtube-search-python
 yt_dlp
@@ -81,3 +81,6 @@ cloudmersive_virus_api_client
 youtube_search
 pretty-errors
 git+https://github.com/python-telegram-bot/ptbcontrib.git
+PyPDF2
+humanize
+python-decouple
