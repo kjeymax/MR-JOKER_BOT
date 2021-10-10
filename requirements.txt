@@ -84,3 +84,4 @@ git+https://github.com/python-telegram-bot/ptbcontrib.git
 PyPDF2
 humanize
 python-decouple
+hachoir
