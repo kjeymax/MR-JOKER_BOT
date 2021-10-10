@@ -8,7 +8,7 @@ import asyncio
 import requests
 import aiofiles
 from random import randint
-from progress import progress
+from mrjoker.function.progress import progress
 from pyrogram.errors import UserNotParticipant, UserBannedInChannel
 from pyrogram import Client, filters, idle
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery, InlineQuery, InputTextMessageContent
