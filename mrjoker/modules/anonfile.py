@@ -33,21 +33,8 @@ DOWNLOAD = "./"
 #    bot_token=BOT_TOKEN)
 
 
-
-''' 
-        
-@bot.on_message(filters.private & filters.command(["start"]))
-async def start(bot, update):
-    text = START_TEXT
-    reply_markup = START_BUTTONS
-    await update.reply_text(
-        text=text,
-        disable_web_page_preview=True,
-        reply_markup=reply_markup
-    )
-'''
-      
-@register(pattern="^/a ?(.*)")
+@pbot.on(events.NewMessage(pattern="/an"))      
+#@register(pattern="^/a ?(.*)")
 async def upload(client, message):
     if UPDATES_CHANNEL is not None:
         try:
@@ -115,7 +102,7 @@ async def upload(client, message):
         await m.edit("__Pʀᴏᴄᴇss Fᴀɪʟᴇᴅ, Mᴀʏʙᴇ Tɪᴍᴇ Oᴜᴛ Dᴜᴇ Tᴏ Lᴀʀɢᴇ Fɪʟᴇ Sɪᴢᴇ!__")
         return
 
-@register(pattern="https://cdn-")
+@pbot.on(events.NewMessage(pattern="https://cdn-"))
 #@pbot.on_message(filters.regex(pattern="https://cdn-") & filters.private & ~filters.edited)
 async def url(client, message):
     msg = await message.reply("__Cʜᴇᴄᴋɪɴɢ Uʀʟ...__")
