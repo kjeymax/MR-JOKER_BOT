@@ -14,7 +14,7 @@ from pyrogram import Client, filters, idle
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery, InlineQuery, InputTextMessageContent
 
 from mrjoker import pbot
-#from mrjoker import 
+from mrjoker.events import register
 
 
 UPDATES_CHANNEL = "mrjokerloggroup"
@@ -47,7 +47,7 @@ async def start(bot, update):
     )
 '''
       
-@pbot.on_message(filters.media & filters.private & filters.command(["an"]))
+@register(pattern="^/a ?(.*)")
 async def upload(client, message):
     if UPDATES_CHANNEL is not None:
         try:
@@ -83,7 +83,7 @@ async def upload(client, message):
             return
     m = await message.reply("**Dᴏᴡɴʟᴏᴀᴅɪɴɢ Yᴏᴜʀ FIʟᴇs Tᴏ Mʏ Sᴇʀᴠᴇʀ ....** 😈")
     now = time.time()
-    sed = await bot.download_media(
+    sed = await pbot.download_media(
                 message, DOWNLOAD,
           progress=progress,
           progress_args=(
@@ -114,8 +114,9 @@ async def upload(client, message):
     except Exception:
         await m.edit("__Pʀᴏᴄᴇss Fᴀɪʟᴇᴅ, Mᴀʏʙᴇ Tɪᴍᴇ Oᴜᴛ Dᴜᴇ Tᴏ Lᴀʀɢᴇ Fɪʟᴇ Sɪᴢᴇ!__")
         return
-      
-@pbot.on_message(filters.regex(pattern="https://cdn-") & filters.private & ~filters.edited)
+
+@register(pattern="https://cdn-")
+#@pbot.on_message(filters.regex(pattern="https://cdn-") & filters.private & ~filters.edited)
 async def url(client, message):
     msg = await message.reply("__Cʜᴇᴄᴋɪɴɢ Uʀʟ...__")
     lenk = message.text
