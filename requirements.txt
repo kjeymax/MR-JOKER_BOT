@@ -8,6 +8,7 @@ PyDictionary
 googletrans
 gtts
 faker
+yt_dlp
 beautifulsoup4
 requests==2.20.0
 python-telegram-bot==12.8
@@ -78,3 +79,4 @@ tldextract
 cloudmersive_virus_api_client
 youtube_search
 pretty-errors
+odmantic
