@@ -11,6 +11,7 @@ html2text
 pytube
 secureme
 gtts
+faker
 envparse
 google_trans_new
 pytz
@@ -23,6 +24,7 @@ googletrans
 opencv-python-headless
 alphabet_detector
 emoji
+spongemock
 heroku3
 bing_image_downloader
 emoji-country-flag
