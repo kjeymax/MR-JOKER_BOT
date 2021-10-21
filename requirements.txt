@@ -11,6 +11,7 @@ html2text
 pytube
 gtts
 envparse
+google_trans_new
 pytz
 lyricsgenius
 better_profanity
