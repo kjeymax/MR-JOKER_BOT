@@ -8,9 +8,20 @@ import asyncio
 import os
 
 
-from pyrogram import filters
+from asyncio import gather, get_event_loop, sleep
+from googletrans import Translator as google_translator
+
+
+from mrjoker import BOT_ID, pbot as mrjoker
+from mrjoker.hextra.aichat import add_chat, get_session, remove_chat
+from mrjoker.pyro.pluginshelper import admins_only, edit_or_reply
+
+
+
+
+from pyrogram import filters, idle
 from time import time
-from mrjoker import pbot as mrjoker
+#from mrjoker import pbot 
 from mrjoker import MONGO_DB_URI
 #MONGO_DB_URI = os.environ.get('MONGO_DB_URI')
 
@@ -46,10 +57,10 @@ def is_kuki(chat_id):
 
 
 
-BOT_ID = 2025517298
+#BOT_ID = 2025517298
 
 @mrjoker.on_message(
-    filters.command(["addchat"])
+    filters.command(["addchat", f"addchat@KomiSanRobot"])
 )
 async def addchat(_, message):
     chatk = message.chat.id
@@ -62,7 +73,7 @@ async def addchat(_, message):
     await asyncio.sleep(5)
 
 @mrjoker.on_message(
-    filters.command(["rmchat"])
+    filters.command(["rmchat", f"rmchat@KomiSanRobot"])
 )
 async def rmchat(_, message):
     chatk = message.chat.id
@@ -102,10 +113,10 @@ async def kuki(_, message):
         Kuki = requests.get(f"https://www.kukiapi.xyz/api/apikey=KUKIwrLK87gL6/kuki/moezilla/message={text}").json()
         nksamax = f"{Kuki['reply']}"
         if "Komi" in text or "komi" in text or "KOMI" in text:
-            await mrjoker.send_chat_action(message.chat.id, "typing")
+            await bot.send_chat_action(message.chat.id, "typing")
         
         await message.reply_text(nksamax)
     
     
     except Exception as e:
-        await mrjoker.send_message(-1001440118277 , f"error in chatbot:\n\n{e}")
+        await bot.send_message(-1001440118277 , f"error in chatbot:\n\n{e}")
