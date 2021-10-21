@@ -102,10 +102,10 @@ async def kuki(_, message):
         Kuki = requests.get(f"https://www.kukiapi.xyz/api/apikey=KUKIwrLK87gL6/kuki/moezilla/message={text}").json()
         nksamax = f"{Kuki['reply']}"
         if "Komi" in text or "komi" in text or "KOMI" in text:
-            await bot.send_chat_action(message.chat.id, "typing")
+            await mrjoker.send_chat_action(message.chat.id, "typing")
         
         await message.reply_text(nksamax)
     
     
     except Exception as e:
-        await bot.send_message(-1001440118277 , f"error in chatbot:\n\n{e}")
+        await mrjoker.send_message(-1001440118277 , f"error in chatbot:\n\n{e}")
