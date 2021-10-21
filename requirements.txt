@@ -1,4 +1,3 @@
-futures
 emoji
 pyYAML>=5.1.2
 tzlocal==2.0
