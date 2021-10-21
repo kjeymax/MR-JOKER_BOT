@@ -1,5 +1,5 @@
 from motor import motor_asyncio
-from odmantic import AIOEngine
+#from odmantic import AIOEngine
 from pymongo import MongoClient
 import re
 import aiohttp
