@@ -1,7 +1,7 @@
 <h1 align = "center"> ❝𝐓𝐡𝐞 𝐌𝐨𝐬𝐭 𝐏𝐨𝐰𝐞𝐫𝐟𝐮𝐥𝐥 𝐆𝐫𝐨𝐮𝐩 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐁𝐨𝐭❞ </h1>
 
 
-<p align = "center"><a herf = "https://t.me/Mrjokerlk_bot" alt = "Mrjoker"><img src = "https://telegra.ph/file/6525d89de5b72003d80fa.png" width = "900"></a></p>
+<p align = "center"><a herf = "https://t.me/Mrjokerlk_bot" alt = "Mrjoker"><img src ="https://socialify.git.ci/kjeymax/MR-JOKER_BOT/image?description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fte.legra.ph%2Ffile%2Fc263660e71bab023a4318.png&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark" alt="MR.Joker Bot" width="720"</a></p>
 
 <p align = "center">
 <a href = "https://python.org">
