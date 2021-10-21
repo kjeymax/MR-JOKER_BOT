@@ -9,6 +9,7 @@ markdown2
 APScheduler
 html2text
 pytube
+secureme
 gtts
 envparse
 google_trans_new
