@@ -1,5 +1,5 @@
 from motor import motor_asyncio
-#from odmantic import AIOEngine
+from odmantic import AIOEngine
 from pymongo import MongoClient
 import re
 import aiohttp
@@ -48,8 +48,8 @@ def is_kuki(chat_id):
 
 BOT_ID = 2025517298
 
-@bot.on_message(
-    filters.command(["addchat", f"addchat@KomiSanRobot"])
+@mrjoker.on_message(
+    filters.command(["addchat"])
 )
 async def addchat(_, message):
     chatk = message.chat.id
@@ -61,8 +61,8 @@ async def addchat(_, message):
         )
     await asyncio.sleep(5)
 
-@bot.on_message(
-    filters.command(["rmchat", f"rmchat@KomiSanRobot"])
+@mrjoker.on_message(
+    filters.command(["rmchat"])
 )
 async def rmchat(_, message):
     chatk = message.chat.id
@@ -108,4 +108,4 @@ async def kuki(_, message):
     
     
     except Exception as e:
-        await bot.send_message(-1001646296281 , f"error in chatbot:\n\n{e}")
+        await bot.send_message(-1001440118277 , f"error in chatbot:\n\n{e}")
