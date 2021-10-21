@@ -5,15 +5,9 @@ async-lru==1.0.2; python_version >= "3.6" and python_version < "4.0"
 asyncio==3.4.3; python_full_version >= "3.6.2" and python_version >= "3.6"
 future ; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.6.0" and python_version < "4"
 git+https://github.com/starry69/python-markdown2.git
-tzlocal==2.0
 pykeyboard
 PyDictionary
 faker
-psycopg2-binary
-feedparser
-hachoir
-zalgo-text
-nltk
 CurrencyConverter
 markdown2
 APScheduler
