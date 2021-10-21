@@ -84,4 +84,4 @@ git+https://github.com/python-telegram-bot/ptbcontrib.git
 humanize
 python-decouple
 hachoir
--e git+https://github.com/art049/odmantic.git#egg=odmantic
+odmantic
