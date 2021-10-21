@@ -6,6 +6,7 @@ asyncio==3.4.3; python_full_version >= "3.6.2" and python_version >= "3.6"
 future ; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.6.0" and python_version < "4"
 git+https://github.com/starry69/python-markdown2.git
 markdown2
+apschedule
 html2text
 pytube
 gtts
