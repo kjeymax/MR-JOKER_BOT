@@ -1,3 +1,4 @@
+future
 emoji
 pyYAML>=5.1.2
 tzlocal==2.0
@@ -80,6 +81,6 @@ cloudmersive_virus_api_client
 youtube_search
 pretty-errors
 git+https://github.com/python-telegram-bot/ptbcontrib.git
+PyPDF2
 humanize
 python-decouple
-hachoir
