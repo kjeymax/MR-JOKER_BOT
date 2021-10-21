@@ -85,3 +85,4 @@ PyPDF2
 humanize
 python-decouple
 hachoir
+odmantic
