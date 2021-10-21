@@ -1,5 +1,6 @@
 future
 emoji
+pydub
 tzlocal==2.0
 pykeyboard
 lxml
