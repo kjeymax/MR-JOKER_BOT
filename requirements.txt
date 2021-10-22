@@ -1,5 +1,4 @@
 future
-kukiapipy
 emoji
 pydub
 numpy
@@ -9,6 +8,7 @@ lxml
 wget
 PyDictionary
 googletrans
+gpytranslate
 gtts
 faker
 yt_dlp
