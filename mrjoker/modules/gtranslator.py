@@ -66,8 +66,8 @@ sm,sn,so,sq,sr,st,su,sv,sw,ta,te,tg,th,tl,tr,uk,ur,uz,
 vi,xh,yi,yo,zh,zh_CN,zh_TW,zu`
 """
 
-TRANSLATE_HANDLER = DisableAbleCommandHandler(["tr", "tl"], translate, run_async=True)
-TRANSLATE_LANG_HANDLER = DisableAbleCommandHandler(["lang", "languages"], languages, run_async=True)
+TRANSLATE_HANDLER = DisableAbleCommandHandler(["tr", "tl"], translate)
+TRANSLATE_LANG_HANDLER = DisableAbleCommandHandler(["lang", "languages"], languages)
 
 dispatcher.add_handler(TRANSLATE_HANDLER)
 dispatcher.add_handler(TRANSLATE_LANG_HANDLER)
