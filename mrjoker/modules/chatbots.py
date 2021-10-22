@@ -1,4 +1,4 @@
-__help__"""
+__help__= f"""
 🤡 *Mr.Joker Luna AI Chatbot* 
 
  🔹 `/chatbot` on/off: Enables and disables Luna AI Chat mode (EXCLUSIVE)
