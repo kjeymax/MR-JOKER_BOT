@@ -16,7 +16,7 @@ from mrjoker import (
     LOGGER,
     dispatcher,
 )
-from Cutiepii_Robot.modules.helper_funcs.chat_status import (
+from mrjoker.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
@@ -73,7 +73,6 @@ CAPTCHA_ANS_DICT = {}
 
 from multicolorcaptcha import CaptchaGenerator
 
-# do not async
 def send(update, message, keyboard, backup_message):
     chat = update.effective_chat
     cleanserv = sql.clean_service(chat.id)
