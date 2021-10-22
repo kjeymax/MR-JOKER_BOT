@@ -1,4 +1,5 @@
 future
+kukiapipy
 emoji
 pydub
 numpy
