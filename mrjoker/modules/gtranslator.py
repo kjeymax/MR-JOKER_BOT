@@ -75,7 +75,3 @@ dispatcher.add_handler(TRANSLATE_LANG_HANDLER)
 __mod_name__ = "G-Translator"
 __command_list__ = ["tr", "tl", "lang", "languages"]
 __handlers__ = [TRANSLATE_HANDLER, TRANSLATE_LANG_HANDLER]
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
