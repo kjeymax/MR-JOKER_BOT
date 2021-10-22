@@ -1,10 +1,11 @@
 import json
 import re
-import os
 import html
 import requests
+import kukiapipy
 import mrjoker.modules.sql.kukiai_sql as sql
 
+from kukiapipy import kuki
 from time import sleep
 from telegram import ParseMode
 from telegram import (CallbackQuery, Chat, MessageEntity, InlineKeyboardButton,
