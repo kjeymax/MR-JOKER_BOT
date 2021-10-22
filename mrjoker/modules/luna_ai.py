@@ -352,16 +352,3 @@ async def kaj(client, message):
         await message.reply_text(pro)
     except CFError:
         return
-
-
-__help__ = """
-*Mr.Joker AI Chatbot* 
-
- 🔹 `/chatbot` [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
- 🔹 `/chatbot EN `: Enables English only chatbot
- 
-Powered by : [Luna ChatBot](https://github.com/TheHamkerCat/LunaChatBot)
-
-"""
-
-__mod_name__ = "ChatBot"
