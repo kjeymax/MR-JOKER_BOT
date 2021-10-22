@@ -1,3 +1,4 @@
+__help__"""
 🤡 *Mr.Joker Luna AI Chatbot* 
 
  🔹 `/chatbot` on/off: Enables and disables Luna AI Chat mode (EXCLUSIVE)
@@ -10,3 +11,6 @@
 🔹 `/addkuki `: Enables and Disables Kuki AI Chat mode (EXCLUSIVE)
 
 *Powered by* : [Kuki Chatbot](https://github.com/MoeZilla/KukiChatbot)
+"""
+
+__mod_name__ = "ChatBots"
