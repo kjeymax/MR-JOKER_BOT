@@ -2,10 +2,8 @@ import json
 import re
 import html
 import requests
-#import kukiapipy
 import mrjoker.modules.sql.kukiai_sql as sql
 
-#from kukiapipy import kuki
 from time import sleep
 from pyrogram.types import (
   Message, 
@@ -119,7 +117,7 @@ def addkuki(update: Update, context: CallbackContext):
             return
         Message = message.text
         bot.send_chat_action(chat_id, action="typing")
-        kukiurl = requests.get('https://www.kukiapi.xyz/api/apikey=KUKIwrLK87gL6/kuki/moezilla/message='+Message)
+        kukiurl = requests.get('https://www.kukiapi.xyz/api/apikey=KUKIIbF11kE8r/mrjoker/kavinduaj/message='+Message)
         Kuki = json.loads(kukiurl.text)
         kuki = Kuki['reply']
         sleep(0.3)
@@ -138,17 +136,6 @@ def list_all_chats(update: Update, context: CallbackContext):
         except RetryAfter as e:
             sleep(e.retry_after)
     update.effective_message.reply_text(text, parse_mode="HTML")
-
-__help__ = """
-Chatbot utilizes the Kuki's api which allows Kuki to talk and provide a more interactive group chat experience.
-*Admins only Commands*:
-
-  🔹 `/Chatbot`*:* Shows chatbot control panel
-  
-*Powered by [Kuki Chatbot](https://github.com/MoeZilla/KukiChatbot)*
-"""
-
-__mod_name__ = "Kuki"
 
 
 CHATBOTK_HANDLER = CommandHandler("addkuki", kuki)#, run_async=True)
