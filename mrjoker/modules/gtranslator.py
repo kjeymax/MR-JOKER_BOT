@@ -79,7 +79,7 @@ def totranslate(update: Update, context: CallbackContext):
         update.effective_message.reply_text(
             "Reply to messages or write messages from other languages ​​for translating into the intended language\n\n"
             "Example: `/tr en-si` to translate from English to sinhala\n"
-            "Or use: `/tr si` for automatic detection and translating it into sinhala.\n"
+            "Or use: `/tr si` for automatic detection and translating it into sinhala.\n",
             parse_mode="markdown",
             disable_web_page_preview=True,
         )
