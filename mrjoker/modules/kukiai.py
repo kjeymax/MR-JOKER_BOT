@@ -156,7 +156,7 @@ ADD_CHAT_HANDLER = CallbackQueryHandler(kukiadd, pattern=r"add_chat")
 RM_CHAT_HANDLER = CallbackQueryHandler(kukirm, pattern=r"rm_chat")
 CHATBOT_HANDLER = MessageHandler(
     Filters.text & (~Filters.regex(r"^#[^\s]+") & ~Filters.regex(r"^!")
-                    & ~Filters.regex(r"^\/")), chatbot)
+                    & ~Filters.regex(r"^\/")), addkuki)
 LIST_ALL_CHATS_HANDLER = CommandHandler(
     "allchats", list_all_chats, filters=CustomFilters.dev_filter)
 
