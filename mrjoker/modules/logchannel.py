@@ -13,9 +13,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from Cutiepii_Robot import EVENT_LOGS, LOGGER, dispatcher
-    from Cutiepii_Robot.modules.helper_funcs.chat_status import user_admin
-    from Cutiepii_Robot.modules.sql import log_channel_sql as sql
+    from mrjoker import EVENT_LOGS, LOGGER, dispatcher
+    from mrjoker.modules.helper_funcs.chat_status import user_admin
+    from mrjoker.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)
