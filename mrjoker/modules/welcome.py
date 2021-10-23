@@ -936,8 +936,8 @@ def welcomemute(update: Update, context: CallbackContext) -> str:
                  parse_mode=ParseMode.MARKDOWN,
             )
             return ""
-             curr_setting = sql.welcome_mutes(chat.id)
-                reply = (
+            curr_setting = sql.welcome_mutes(chat.id)
+            reply = (
                     f"\n Give me a setting!\nChoose one out of: `off`/`no` or `soft`, `strong` or `captcha` only! \n"
                     f"Current setting: `{curr_setting}`"
             )
@@ -1285,10 +1285,10 @@ CLEAN_WELCOME = CommandHandler("cleanwelcome", clean_welcome, filters=Filters.gr
 WELCOME_HELP = CommandHandler("welcomehelp", welcome_help)
 WELCOME_MUTE_HELP = CommandHandler("welcomemutehelp", welcome_mute_help)
 BUTTON_VERIFY_HANDLER = CallbackQueryHandler(user_button, pattern=r"user_join_")
-)
+
 CAPTCHA_BUTTON_VERIFY_HANDLER = CallbackQueryHandler(
     user_captcha_button,
-    pattern=r"user_captchajoin_\([\d\-]+,\d+\)_\(\d{4}\)"
+    pattern=r"user_captchajoin_\([\d\-]+,\d+\)_\(\d{4}\)",
 )
 
 dispatcher.add_handler(NEW_MEM_HANDLER)
