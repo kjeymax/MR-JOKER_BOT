@@ -920,7 +920,7 @@ def welcomemute(update: Update, context: CallbackContext) -> str:
                 f"<b>• Admin:</b> {mention_html(user.id, user.first_name)}\n"
                 f"Has toggled welcome mute to <b>STRONG</b>."
             )
-if args[0].lower() in ["captcha"]:
+        if args[0].lower() in ["captcha"]:
             sql.set_welcome_mutes(chat.id, "captcha")
             msg.reply_text(
                 "I will now mute people when they join until they prove they're not a bot.\nThey have to solve a captcha to get unmuted."
@@ -931,13 +931,13 @@ if args[0].lower() in ["captcha"]:
                 f"<b>• Admin:</b> {mention_html(user.id, user.first_name)}\n"
                 f"Has toggled welcome mute to <b>CAPTCHA</b>."
             )
-        msg.reply_text(
+            msg.reply_text(
             "Please enter `off`/`no`/`soft`/`strong`/`captcha`!",
             parse_mode=ParseMode.MARKDOWN,
-        )
-        return ""
-    curr_setting = sql.welcome_mutes(chat.id)
-    reply = (
+            )
+            return ""
+        curr_setting = sql.welcome_mutes(chat.id)
+      reply = (
         f"\n Give me a setting!\nChoose one out of: `off`/`no` or `soft`, `strong` or `captcha` only! \n"
         f"Current setting: `{curr_setting}`"
     )
