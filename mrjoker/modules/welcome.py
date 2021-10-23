@@ -931,7 +931,7 @@ def welcomemute(update: Update, context: CallbackContext) -> str:
                 f"<b>• Admin:</b> {mention_html(user.id, user.first_name)}\n"
                 f"Has toggled welcome mute to <b>CAPTCHA</b>."
             )
-             msg.reply_text(
+            msg.reply_text(
                 "Please enter `off`/`no`/`soft`/`strong`/`captcha`!",
                  parse_mode=ParseMode.MARKDOWN,
             )
