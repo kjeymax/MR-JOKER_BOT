@@ -1281,7 +1281,7 @@ SET_GOODBYE = CommandHandler(
     "setgoodbye", set_goodbye, filters=Filters.group
 )
 RESET_WELCOME = CommandHandler(
-    "resetwelcome", reset_welcome, filters=Filters.groups
+    "resetwelcome", reset_welcome, filters=Filters.group
 )
 RESET_GOODBYE = CommandHandler(
     "resetgoodbye", reset_goodbye, filters=Filters.group
