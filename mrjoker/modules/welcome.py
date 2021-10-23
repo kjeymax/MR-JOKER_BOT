@@ -3,6 +3,7 @@ import random
 import re
 import time
 from functools import partial
+from io import BytesIO
 
 from telegram import (
     ChatPermissions,
