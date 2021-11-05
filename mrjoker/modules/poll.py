@@ -2,12 +2,12 @@ from pymongo import MongoClient
 from telethon import *
 from telethon.tl import *
 
-from mrjoker import BOT_ID, MONGO_DB_URI
+from mrjoker import BOT_ID, MONGO_DB_URL
 from mrjoker import telethn as tbot
 from mrjoker.events import register
 
 client = MongoClient()
-client = MongoClient(MONGO_DB_URI)
+client = MongoClient(MONGO_DB_URL)
 db = client["mjbot"]
 approved_users = db.approve
 dbb = client["kaj"]
