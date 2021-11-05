@@ -1,4 +1,4 @@
-from mrjoker.mongo import db
+from mrjoker import db
 from typing import Dict, List, Union
 
 
