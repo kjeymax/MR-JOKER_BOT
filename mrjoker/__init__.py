@@ -9,6 +9,10 @@ from pyrogram import Client, errors
 from telethon import TelegramClient
 from aiohttp import ClientSession
 from Python_ARQ import ARQ
+from motor import motor_asyncio
+from odmantic import AIOEngine
+from pymongo import MongoClient
+from pymongo.errors import ServerSelectionTimeoutError
 
 StartTime = time.time()
 CMD_HELP = {}
@@ -79,7 +83,6 @@ if ENV:
     BOT_ID = int(os.environ.get("BOT_ID", None))
     BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
     DB_URI = os.environ.get("DATABASE_URL")
-    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
     VIRUS_API_KEY = os.environ.get("VIRUS_API_KEY", None)
     DONATION_LINK = os.environ.get("DONATION_LINK")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
@@ -105,6 +108,7 @@ if ENV:
     GENIUS_API_TOKEN = os.environ.get("GENIUS_API_TOKEN", None)
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
     LASTFM_API_KEY = os.environ.get("LASTFM_API_KEY", None)
+    MONGO_DB_URL = os.environ.get("MONGO_DB_URI", None)
 
     try:
         BL_CHATS = set(int(x) for x in os.environ.get("BL_CHATS", "").split())
@@ -157,7 +161,7 @@ else:
 
     BOT_USERNAME = Config.BOT_USERNAME
     DB_URI = Config.SQLALCHEMY_DATABASE_URI
-    MONGO_DB_URI = Config.MONGO_DB_URI
+    MONGO_DB_URL = Config.MONGO_DB     
     HEROKU_API_KEY = Config.HEROKU_API_KEY
     HEROKU_APP_NAME = Config.HEROKU_APP_NAME
     TEMP_DOWNLOAD_DIRECTORY = Config.TEMP_DOWNLOAD_DIRECTORY
@@ -216,7 +220,7 @@ else:
         
          
 #install aiohttp session
-print("[MrJoker]: Initializing AIOHTTP Session")
+print("[MRJOKER]: Initializing AIOHTTP Session")
 aiohttpsession = ClientSession()    
     
 #install arq
@@ -227,6 +231,16 @@ telethn = TelegramClient("Mrjoker", API_ID, API_HASH)
 pbot = Client("mrjoker", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 #mbot = TelegramClient(StringSession(STRING_SESSION), API_KEY, API_HASH)
 dispatcher = updater.dispatcher
+
+print("[MRJOKER]: Connecting To Yūki • Data Center • Mumbai • MongoDB Database")
+MONGO_DB = "mrjoker"
+mongodb = MongoClient(MONGO_DB_URL, 27017)[MONGO_DB]
+motor = motor_asyncio.AsyncIOMotorClient(MONGO_DB_URL)
+db = motor[MONGO_DB]
+engine = AIOEngine(motor, MONGO_DB)
+
+print("[MRJOKER]: INITIALZING AIOHTTP SESSION")
+aiohttpsession = ClientSession()
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
 DEV_USERS = list(DEV_USERS)
