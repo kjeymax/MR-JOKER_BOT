@@ -1,11 +1,11 @@
 __help__ = """
-** GPS **
+* GPS *
  🔹 `/gps` <Place> : Show Location on a map
  
- ** Send **
+ * Send *
  🔹 `/snd` <Text> : Message like the bot
  
-** Grammer **
+* Grammer *
  🔹 `/t` <reply> : Show grammer corrected text
  
 ** Image Tools**
@@ -13,16 +13,16 @@ __help__ = """
  🔹 `/getqr` <reply to image>: Read QR code
  🔹 `/makeqr` <reply to text>: Make QR code
  
-** Style Text **
+* Style Text *
  🔹 `/weebify` : Weebify Text
  🔹 `/square` : square Text
  🔹 `/blue` : Blues text
  
-** Encrypt **
+* Encrypt *
  🔹 `/encrypt` : Reply text for this command
  🔹 `/decrypt` : Reply text for this command
  
-** Heroku **
+* Heroku *
  🔹 `/set` : set new var
  🔹 `/see` : get current var
  🔹 `/del` : delete var
@@ -30,7 +30,8 @@ __help__ = """
  🔹 `/usage` : Get your account Dyno Usage
  🔹 `/logs` : Get your App logz
  
-** More **
+* More *
  🔹 `/phone` <tp no> : Track Phone no
+ 🔹 `/barcode` <text>: makes a barcode out of the text, crop the barcode if you don't want to reveal the text
 """
 __mod_name__ = "More Tools"
