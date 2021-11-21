@@ -72,13 +72,13 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-MRJOKER_IMG = "https://www.linkpicture.com/q/Orange-and-White-Funny-Dating-Animated-Video-Presentation.gif"
+MRJOKER_IMG = "https://telegra.ph/file/a743258a2c2803b8a710a.jpg"
 
-MRJOKER_AUD = "https://audio.jukehost.co.uk/kKJkdHgoMPeqdel4sDrEHr7m4U6o4Xya"
+MRJOKER_AUD = "https://t.me/NOINOIBOTM/2"
 
 
 PM_START_TEXT = """
-*Hello there*, *I*'*m* [𝓜𝓻,𝓙𝓸𝓴𝓮𝓻](https://telegra.ph/file/6525d89de5b72003d80fa.png)
+*Hello there*, *I*'*m* [𝗥𝗘𝗖𝗞𝗟𝗘𝗦𝗦 🔥](https://telegra.ph/file/a743258a2c2803b8a710a.jpg)
 *I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managing your group*
 🍃🔻 **Make sure you read** `INFO` **Section Below** 🔺🍃 
 """
@@ -100,14 +100,14 @@ buttons = [
     ],
     
     [
-        InlineKeyboardButton(text="➕ 𝐀𝐃𝐃 𝐌𝐑.𝐉𝐎𝐊𝐄𝐂 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕", url="http://t.me/Mrjokerlk_bot?startgroup=true"),
+        InlineKeyboardButton(text="➕ 𝐀𝐃𝐃 𝗥𝗘𝗖𝗞𝗟𝗘𝗦𝗦 🔥 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕", url="http://t.me/reckless_group_bot?startgroup=true"),
     ],
 ]
 
 
 HELP_STRINGS = """
 **SETTINGS**
-**𝐂𝐥𝐢𝐜𝐤 𝐨𝐧 𝐭𝐡𝐞 𝐛𝐮𝐭𝐭𝐨𝐧𝐬 𝐛𝐞𝐥𝐨𝐰 𝐭𝐨 𝐠𝐞𝐭 𝐝𝐨𝐜𝐮𝐦𝐞𝐧𝐭𝐚𝐭𝐢𝐨𝐧 𝐚𝐛𝐨𝐮𝐭 𝐬𝐩𝐞𝐜𝐢𝐟𝐢𝐜 𝐦𝐨𝐝𝐮𝐥𝐞𝐬**[🤖](https://telegra.ph/file/6525d89de5b72003d80fa.png)"""
+**𝐂𝐥𝐢𝐜𝐤 𝐨𝐧 𝐭𝐡𝐞 𝐛𝐮𝐭𝐭𝐨𝐧𝐬 𝐛𝐞𝐥𝐨𝐰 𝐭𝐨 𝐠𝐞𝐭 𝐝𝐨𝐜𝐮𝐦𝐞𝐧𝐭𝐚𝐭𝐢𝐨𝐧 𝐚𝐛𝐨𝐮𝐭 𝐬𝐩𝐞𝐜𝐢𝐟𝐢𝐜 𝐦𝐨𝐝𝐮𝐥𝐞𝐬**[🤖](https://telegra.ph/file/a743258a2c2803b8a710a.jpg)"""
 
 
 
@@ -232,7 +232,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="𝗦𝗨𝗣𝗣𝗢𝗥𝗧", url="t.me/lkhitech")]]
+                [[InlineKeyboardButton(text="𝗦𝗨𝗣𝗣𝗢𝗥𝗧", url="t.me/CFC_BOT_SUPPORT")]]
             ),
         )
         
@@ -308,7 +308,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "❮❮❮❮🤡 𝗠𝗿.𝗝𝗼𝗸𝗲𝗿 𝗛𝗲𝗹𝗽 𝗳𝗼𝗿 *{}* 𝗺𝗼𝗱𝘂𝗹𝗲 🤡❯❯❯❯:\n".format(
+                "❮❮❮❮😈 𝗥𝗘𝗖𝗞𝗟𝗘𝗦𝗦 🔥 𝗛𝗲𝗹𝗽 𝗳𝗼𝗿 *{}* 𝗺𝗼𝗱𝘂𝗹𝗲 😈❯❯❯❯:\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -366,10 +366,10 @@ def mrjoker_about_callback(update, context):
     if query.data == "mrjoker_":
         query.message.edit_text(
             
-            text=f"*🤡 Hi again!  The name's {dispatcher.bot.first_name} 🤡 \n\nAs  You I'm a next generational group management bot developed by HITECH🇱🇰 TEAM .* "
-            f"\n\n 🔥 Join [HITECH](https://t.me/lkhitech) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
+            text=f"*😈 Hi again!  The name's {dispatcher.bot.first_name} 🤡 \n\nAs  You I'm a next generational group management bot developed by 𝗕𝗔𝗭𝗜𝗚𝗔𝗥🔥 .* "
+            f"\n\n 🔥 Join [𝗕𝗔𝗭𝗜𝗚𝗔𝗥🔥](https://t.me/BAZIGARYT) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
-            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/6525d89de5b72003d80fa.png)"
+            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/a743258a2c2803b8a710a.jpg)"
             f"\n\n Report error /bugs click the Button",
           
             parse_mode=ParseMode.MARKDOWN,
@@ -378,10 +378,10 @@ def mrjoker_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url="https://www.youtube.com/c/KavinduAj"
+                            text="𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url="https://t.me/PHOENIX_EMPIRE"
                         ),
                         InlineKeyboardButton(
-                            text="🇱🇰𝗛𝗜𝗧𝗘𝗖𝗛 𝗚𝗥𝗢𝗨𝗣", url="https://t.me/hitechlkgroup"
+                            text="𝗦𝗨𝗣𝗣𝗢𝗥𝗧", url="https://t.me/CFC_BOT_SUPPORT"
                         ),
                     ],
                     [InlineKeyboardButton(text="⬅️ 𝗕𝗔𝗖𝗞", callback_data="mrjoker_back")],
@@ -402,7 +402,7 @@ def mrjoker_about_callback(update, context):
             text=f"*Here's basic Help regarding* *How to use Me?*"
             f"\n\n• Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n• Powerfull Telegram group Management Bot\n"
-            f"\n• Than send `/admincache@Mrjokerlk_bot` in that chat to refresh admin list in My database.\n"
+            f"\n• Than send `/admincache@Mrjokerlk_bot` in  that chat to refresh admin list in My database.\n"
             f"\n\n*All done now use below given button's to know about use!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
@@ -430,7 +430,7 @@ def mrjoker_about_callback(update, context):
     elif query.data == "mrjoker_admin":
         query.message.edit_text(
             text=f"*Let's make your group bit effective now*"
-            f"\nCongragulations, MⷨRͬ.JOͦᴋⷦEͤRͬ now ready to manage your group."
+            f"\nCongragulations, 𝗥𝗘𝗖𝗞𝗟𝗘𝗦𝗦 🔥 now ready to manage your group."
             f"\n\n*Admin Tools*"
             f"\nBasic Admin tools help you to protect and powerup your group."
             f"\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -464,10 +464,10 @@ def mrjoker_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="𝗟𝗢𝗚'ꜱ 🤡", url="https://t.me/mrjokerloggroup"),
+                    InlineKeyboardButton(text="𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url="https://t.me/PHOENIX_EMPIRE"),
                  ],
                  [
-                    InlineKeyboardButton(text="𝗦𝗨𝗣𝗣𝗢𝗥𝗧 👥", url= "https://t.me/hitechlkgroup"),
+                    InlineKeyboardButton(text="𝗦𝗨𝗣𝗣𝗢𝗥𝗧 👥", url= "https://t.me/CFC_BOT_SUPPORT"),
                  ],
 
                 ]
@@ -477,14 +477,14 @@ def mrjoker_about_callback(update, context):
         
     elif query.data == "mrjoker_credit":
         query.message.edit_text(
-            text=f"<b> CREDIT FOR MⷨRͬ.JOͦᴋⷦEͤRͬ DEV'S</b>\n"
+            text=f"<b> CREDIT FOR 𝗕𝗔𝗭𝗜𝗚𝗔𝗥🔥 𝗛𝗘𝗬𝗔𝗠𝗔𝗡🔥 DEV'S</b>\n"
             f"\nHere Some Developers Helping in Making The Mr.Joker Bot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="𝗞𝗔𝗩𝗜𝗡𝗗𝗨 𝗔𝗝", url="t.me/kavinduaj"),
-                    InlineKeyboardButton(text="𝗔𝗦𝗛𝗘𝗡 𝗦𝗛𝗔𝗟𝗨𝗞𝗔", url="t.me/ashenwalk"),
+                    InlineKeyboardButton(text="𝗕𝗔𝗭𝗜𝗚𝗔𝗥🔥", url="t.me/BAZIGARYT"),
+                    InlineKeyboardButton(text="𝗛𝗘𝗬𝗔𝗠𝗔𝗡🔥", url="t.me/HEYAAMAN"),
                  
                  ]
                 ]
@@ -497,8 +497,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤡 I'm *MⷨRͬ.JOͦᴋⷦEͤRͬ*
-                 \nHere is the [🤡Source Code🤡](https://github.com/kmacprt/MR-JOKER-BOT) .""",
+            text=""" Hi..𝗥𝗘𝗖𝗞𝗟𝗘𝗦𝗦 𝗕𝗬 𝗖𝗙𝗖 𝗕𝗢𝗧𝗦*
+                 \nHere is the [𝗕𝗔𝗭𝗜𝗚𝗔𝗥🔥](https://t.me/bazigaryt) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -847,9 +847,7 @@ def main():
     else:
         LOGGER.info("""      
    
-░█▀▄▀█ ░█▀▀█ 　 ───░█ ░█▀▀▀█ ░█─▄▀ ░█▀▀▀ ░█▀▀█ 　 ░█▀▀█ ░█▀▀▀█ ▀▀█▀▀ 　 ░█▀▀▀█ ▀▀█▀▀ ─█▀▀█ ░█▀▀█ ▀▀█▀▀ 
-░█░█░█ ░█▄▄▀ 　 ─▄─░█ ░█──░█ ░█▀▄─ ░█▀▀▀ ░█▄▄▀ 　 ░█▀▀▄ ░█──░█ ─░█── 　 ─▀▀▀▄▄ ─░█── ░█▄▄█ ░█▄▄▀ ─░█── 
-░█──░█ ░█─░█ 　 ░█▄▄█ ░█▄▄▄█ ░█─░█ ░█▄▄▄ ░█─░█ 　 ░█▄▄█ ░█▄▄▄█ ─░█── 　 ░█▄▄▄█ ─░█── ░█─░█ ░█─░█ ─░█──             
+𝗥𝗘𝗖𝗞𝗟𝗘𝗦𝗦 𝗕𝗬 𝗖𝗙𝗖 𝗕𝗢𝗧𝗦
         
 """)
         updater.start_polling(timeout=15, read_latency=4, clean=True)
