@@ -1,7 +1,7 @@
 <h1 align = "center"> □𝐑𝐄𝐂𝐊𝐋𝐄𝐒𝐒 𝐏𝐎𝐖𝐄𝐑𝐅𝐔𝐋𝐋 𝐌𝐀𝐍𝐀𝐆𝐄𝐌𝐄𝐍𝐓 𝐁𝐎𝐓❞ </h1>
 
 
-<p align = "center"><a herf = "https://t.me/Mrjokerlk_bot" alt = "Mrjoker"><img src ="https://telegra.ph/file/d3bb1ebbcd15ff3f66d77.jpg?description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fte.legra.ph%2Ffile%2Fc263660e71bab023a4318.png&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark" alt="MR.Joker Bot" width="900"</a></p>
+<p align = "center"><a herf = "https://t.me/Mrjokerlk_bot" alt = "Mrjoker"><img src ="https://telegra.ph/file/d3bb1ebbcd15ff3f66d77.jpg?description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fte.legra.ph%2Ffile%2Fc263660e71bab023a4318.png&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark" alt=" 𝗥𝗘𝗖𝗞𝗟𝗘𝗦𝗦 Bot" width="900"</a></p>
 
 <p align = "center">
 <a href = "https://python.org">
@@ -21,7 +21,7 @@
 
 
 <h1 align ="center"> 𝍖𝍖�☠︎︎𝗥𝗦𝗡 𝗕𝗢𝗧𝗦☠︎︎</h1>
-<h1 align = "center">Yo,�🤖♂️I'm Alive..I'm a super bot 🔥...🚴‍♂️Speed 1 THz..Memory 1 Zettabyte.🕺</center></h1>
+<h1 align = "center"> 🤖 𝗶 𝗮𝗺 𝗮𝗹𝗶𝘃𝗲 𝗯𝗰𝘇 𝗶 𝗮𝗺 𝗥𝗦𝗡 𝗕�𝗢𝗧☠️.🕺</center></h1>
 
 <p><h3 align = "justify">A modular telegram Python bot running on python3 with an sqlalchemy database.</br></br></h3>
   
