@@ -1,7 +1,7 @@
 <h1 align = "center"> □𝐑𝐄𝐂𝐊𝐋𝐄𝐒𝐒 𝐏𝐎𝐖𝐄𝐑𝐅𝐔𝐋𝐋 𝐌𝐀𝐍𝐀𝐆𝐄𝐌𝐄𝐍𝐓 𝐁𝐎𝐓❞ </h1>
 
 
-<p align = "center"><a herf = "https://t.me/Mrjokerlk_bot" alt = "Mrjoker"><img src ="https://telegra.ph/file/d3bb1ebbcd15ff3f66d77.jpg?description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fte.legra.ph%2Ffile%2Fc263660e71bab023a4318.png&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark" alt=" 𝗥𝗘𝗖𝗞𝗟𝗘𝗦𝗦 Bot" width="900"</a></p>
+<p align = "center"><a herf = "https://t.me/teri_behn_ka_bf" alt = "Mrjoker"><img src ="https://telegra.ph/file/d3bb1ebbcd15ff3f66d77.jpg?description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fte.legra.ph%2Ffile%2Fc263660e71bab023a4318.png&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark" alt=" 𝗥𝗘𝗖𝗞𝗟𝗘𝗦𝗦 Bot" width="900"</a></p>
 
 <p align = "center">
 <a href = "https://python.org">
@@ -17,7 +17,7 @@
 
 
 <p align="Center">
-<a href="https://github.com/kjeymax/MR-JOKER_BOT/discussions" alt="Mr Joker"> <img src="https://img.shields.io/badge/%F0%9F%A4%A1-Mr%20Joker%20Discussions-9cf" /> </a>
+<a href="https://github.com/Zacky1239/RECKLESS-BOT.git/discussions" alt="MR CHirag"> <img src="https://img.shields.io/badge/%F0%9F%A4%A1-Mr%20Joker%20Discussions-9cf" /> </a>
 
 
 <h1 align ="center"> 𝍖𝍖�☠︎︎𝗥𝗦𝗡 𝗕𝗢𝗧𝗦☠︎︎</h1>
@@ -25,7 +25,7 @@
 
 <p><h3 align = "justify">A modular telegram Python bot running on python3 with an sqlalchemy database.</br></br></h3>
   
-<h3 align = "justify">Originally a simple group management bot with multiple admin features, it has evolved into becoming a basis for modular bots aiming to provide simple plugin expansion via a simple drag and drop.</h3></p>
+<h3 align = "justify">Originally a RECKLESS group management bot with multiple admin features, it has evolved into becoming a basis for modular bots aiming to provide simple plugin expansion via a simple drag and drop.</h3></p>
 
 
 ## Deploy
