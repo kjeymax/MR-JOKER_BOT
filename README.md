@@ -5,19 +5,19 @@
 
 <p align = "center">
 <a href = "https://python.org">
-<img src = "https://forthebadge.com/images/badges/made-with-python.svg">
+<img src = "https://telegra.ph/file/9a6df86cb699a5c48a8eb.mp4/images/badges/made-with-python.svg">
 </p>
 </a>
 
 <p align = "center">
 <a href = "https://github.com/Zacky1239/RECKLESS-BOT.git">
-<img src = "https://forthebadge.com/images/badges/open-source.svg">
+<img src = "https://telegra.ph/file/9a6df86cb699a5c48a8eb.mp4/images/badges/open-source.svg">
 </p>
 </a>
 
 
 <p align="Center">
-<a href="https://github.com/Zacky1239/RECKLESS-BOT.git/discussions" alt="MR CHirag"> <img src="https://img.shields.io/badge/%F0%9F%A4%A1-Mr%20Joker%20Discussions-9cf" /> </a>
+<a href="https://github.com/Zacky1239/RECKLESS-BOT.git/discussions" alt="MR CHirag"> <img src="https://img.shied:https://telegra.ph/file/9a6df86cb699a5c48a8eb.mp4Discussions-9cf" /> </a>
 
 
 <h1 align ="center"> 𝍖𝍖�☠︎︎𝗥𝗦𝗡 𝗕𝗢𝗧𝗦☠︎︎</h1>
