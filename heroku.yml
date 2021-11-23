@@ -2,4 +2,4 @@ build:
   docker:
     worker: Dockerfile
 run:
-  worker: python3 -m mrjoker
+  worker: python3 -m RSN-BOT 

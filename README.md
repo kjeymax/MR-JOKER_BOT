@@ -1,35 +1,35 @@
-<h1 align = "center"> ❝𝐓𝐡𝐞 𝐌𝐨𝐬𝐭 𝐏𝐨𝐰𝐞𝐫𝐟𝐮𝐥𝐥 𝐆𝐫𝐨𝐮𝐩 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐁𝐨𝐭❞ </h1>
+<h1 align = "center"> □𝐑𝐄𝐂𝐊𝐋𝐄𝐒𝐒 𝐏𝐎𝐖𝐄𝐑𝐅𝐔𝐋𝐋 𝐌𝐀𝐍𝐀𝐆𝐄𝐌𝐄𝐍𝐓 𝐁𝐎𝐓❞ </h1>
 
 
-<p align = "center"><a herf = "https://t.me/Mrjokerlk_bot" alt = "Mrjoker"><img src ="https://socialify.git.ci/kjeymax/MR-JOKER_BOT/image?description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fte.legra.ph%2Ffile%2Fc263660e71bab023a4318.png&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark" alt="MR.Joker Bot" width="900"</a></p>
+<p align = "center"><a herf = "https://t.me/teri_behn_ka_bf" alt = "Mrjoker"><img src ="https://telegra.ph/file/d3bb1ebbcd15ff3f66d77.jpg?description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fte.legra.ph%2Ffile%2Fc263660e71bab023a4318.png&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark" alt=" 𝗥𝗘𝗖𝗞𝗟𝗘𝗦𝗦 Bot" width="900"</a></p>
 
 <p align = "center">
 <a href = "https://python.org">
-<img src = "https://forthebadge.com/images/badges/made-with-python.svg">
+<img src = "https://telegra.ph/file/9a6df86cb699a5c48a8eb.mp4/images/badges/made-with-python.svg">
 </p>
 </a>
 
 <p align = "center">
-<a href = "https://github.com/kjeymax/MR-JOKER_BOT">
-<img src = "https://forthebadge.com/images/badges/open-source.svg">
+<a href = "https://github.com/Zacky1239/RECKLESS-BOT.git">
+<img src = "https://telegra.ph/file/9a6df86cb699a5c48a8eb.mp4/images/badges/open-source.svg">
 </p>
 </a>
 
 
 <p align="Center">
-<a href="https://github.com/kjeymax/MR-JOKER_BOT/discussions" alt="Mr Joker"> <img src="https://img.shields.io/badge/%F0%9F%A4%A1-Mr%20Joker%20Discussions-9cf" /> </a>
+<a href="https://github.com/Zacky1239/RECKLESS-BOT.git/discussions" alt="MR CHirag"> <img src="https://img.shied:https://telegra.ph/file/9a6df86cb699a5c48a8eb.mp4Discussions-9cf" /> </a>
 
 
-<h1 align ="center"> 𝍖𝍖𝍖𐒄Ɽ.ʝⰙƘƸⱤ𝍖𝍖𝍖</h1>
-<h1 align = "center">Yo,🤡♂️I'm Alive..I'm a super bot 🔥...🚴‍♂️Speed 1 THz..Memory 1 Zettabyte.🕺</center></h1>
+<h1 align ="center"> 𝍖𝍖�☠︎︎𝗥𝗦𝗡 𝗕𝗢𝗧𝗦☠︎︎</h1>
+<h1 align = "center"> 🤖 𝗶 𝗮𝗺 𝗮𝗹𝗶𝘃𝗲 𝗯𝗰𝘇 𝗶 𝗮𝗺 𝗥𝗦𝗡 𝗕�𝗢𝗧☠️.🕺</center></h1>
 
 <p><h3 align = "justify">A modular telegram Python bot running on python3 with an sqlalchemy database.</br></br></h3>
   
-<h3 align = "justify">Originally a simple group management bot with multiple admin features, it has evolved into becoming a basis for modular bots aiming to provide simple plugin expansion via a simple drag and drop.</h3></p>
+<h3 align = "justify">Originally a RECKLESS group management bot with multiple admin features, it has evolved into becoming a basis for modular bots aiming to provide simple plugin expansion via a simple drag and drop.</h3></p>
 
 
 ## Deploy
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kjeymax/MR-JOKER_BOT)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Zacky1239/RECKLESS-BOT.git)
 
 [![Deploy To Railway](https://railway.app/button.svg)](https://railway.app)
 
