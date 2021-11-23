@@ -10,7 +10,7 @@
 </a>
 
 <p align = "center">
-<a href = "https://github.com/kjeymax/MR-JOKER_BOT">
+<a href = "https://github.com/Zacky1239/RECKLESS-BOT.git">
 <img src = "https://forthebadge.com/images/badges/open-source.svg">
 </p>
 </a>
