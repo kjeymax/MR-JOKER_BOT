@@ -78,31 +78,33 @@ MRJOKER_AUD = "https://audio.jukehost.co.uk/kKJkdHgoMPeqdel4sDrEHr7m4U6o4Xya"
 
 
 PM_START_TEXT = """
-*Hello there*, *I*'*m* [𝓜𝓻,𝓙𝓸𝓴𝓮𝓻](https://telegra.ph/file/6525d89de5b72003d80fa.png)
-*I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managing your group*
-🍃🔻 **Make sure you read** `INFO` **Section Below** 🔺🍃 
+🌈 *Hello there*, *I*'*m* [Captain](https://telegra.ph/file/3ecc4a71f80b59d65a176.jpg)
+*I am an Anime Themed Group Managing Bot and I will help in managing your group*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+**Make sure you read** `INFO` **Section Below**
+➛ *Try The Help Buttons Below To Know My Abilities* ××
 """
 
 buttons = [
     [
-        InlineKeyboardButton(
-            text="🤡 𝗛𝗘𝗟𝗣 🤡", callback_data="help_back"),
-    ],
-   # [
-     #   InlineKeyboardButton(
-     #       text ="Language", callback_data="set_lang_"),
-    #],
-    [
-        InlineKeyboardButton(text="🚀 𝗜𝗡𝗙𝗢 🚀", callback_data="mrjoker_"),
-        InlineKeyboardButton(
-            text=" 𝗕𝗔𝗦𝗜𝗖 𝗛𝗘𝗟𝗣 👮", callback_data="mrjoker_basichelp"
-        ),
-    ],
-    
-    [
-        InlineKeyboardButton(text="➕ 𝐀𝐃𝐃 𝐌𝐑.𝐉𝐎𝐊𝐄𝐂 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕", url="http://t.me/Mrjokerlk_bot?startgroup=true"),
-    ],
-]
+                        InlineKeyboardButton(
+                            text=f"Add {BOT_NAME} To Your Group",
+                            url=f"t.me/{BOT_USERNAME}?startgroup=true")
+                    ],
+                   [
+                       InlineKeyboardButton(text="Information", callback_data="mrjoker_"),
+                       InlineKeyboardButton(text="Laungauge", callback_data="set_lang_"),
+                       InlineKeyboardButton(text="Basic help", callback_data=mrjoker_basichelp"),
+                     ],
+                    [                  
+                       InlineKeyboardButton(
+                             text="🚑 Support",
+                             url=f"https://t.me/{SUPPORT_CHAT}"),
+                       InlineKeyboardButton(
+                             text="📢 Updates",
+                             url="https://t.me/The_Blaze_Network")
+                     ], 
+    ]
 
 
 HELP_STRINGS = """
@@ -111,7 +113,7 @@ HELP_STRINGS = """
 
 
 
-DONATE_STRING = """ @kavinduaj"""
+DONATE_STRING = """ @log_afk"""
 
 IMPORTED = {}
 MIGRATEABLE = []

@@ -29,7 +29,7 @@
 
 
 ## Deploy
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kjeymax/MR-JOKER_BOT)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Unknownvip/MR-JOKER_BOT)
 
 [![Deploy To Railway](https://railway.app/button.svg)](https://railway.app)
 
