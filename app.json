@@ -10,7 +10,7 @@
          "bot",
          "mrjoker"
       ],   
-   "repository": "https://github.com/kjeymax/MR-JOKER_BOT.git",
+   "repository": "https://github.com/umashankar3/MR-JOKER_BOT.git",
    "addons": [
       {
          "options": {
@@ -31,17 +31,17 @@
       "TOKEN": {
          "description": "Your bot token. Get one from @BotFather",
          "required": true,
-         "value": ""
+         "value": "5270649669:AAF8keiJQBUtXvkbJQYq-jAzBlZDN6Qbngo"
       },
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": ""
+         "value": "18051570"
       },
       "API_HASH": {
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": ""
+         "value": "162a1fa862b5558d6bc42cd72c3b83ce"
       },    
       "SQLALCHEMY_DATABASE_URI": {
          "description": "Your postgres sql db, empty this field if you dont have one.",
@@ -51,32 +51,32 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1131653685"
+         "value": "5294102838"
       },      
       "SUDO_USERS": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1131653685"   
+         "value": "5294102838"   
       },
       "SUPPORT_USERS":{
             "description": "Your user ID's as an integer.",
             "required" : true,
-            "value" : "1131653685"
+            "value" : "5294102838"
       },      
       "WHITELIST_USERS": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1131653685"     
+         "value": "5294102838"     
      
       },
       "BOT_ID": {
          "description": "Your bot ID.. Use any other bot to get it.",
          "required": true,
-         "value": ""
+         "value": "5270649669"
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
-        "value": ""
+        "value": "f5eeddb1-4979-4fec-9d60-89270bf9d985"
       },
       "HEROKU_APP_NAME": {
         "description": "Enter the Heroku app name here (Must an exact same name with your input above).",
@@ -84,17 +84,17 @@
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "kavinduaj"
+         "value": "Seema9421"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: lkhitech. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "lkhitech"
+         "value": "bot_sport_uy"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
          "required": true,
-         "value": ""
+         "value": "mongodb+srv://1:1@cluster0.ogfqq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
       },
       "IBM_WATSON_CRED_URL": {
          "description": "This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
@@ -107,12 +107,12 @@
      "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-100....'",
          "required": true,
-         "value": "-123456789"
+         "value": "-1001747492350"
       },
       "JOIN_LOGGER": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
-         "value": "-123456789"
+         "value": "-1001747492350"
       },      
       "CASH_API_KEY": {
          "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
@@ -122,7 +122,7 @@
       "TIME_API_KEY": {
          "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
          "required": true,
-         "value": "-xyz"
+         "value": "2VG778ROTV5M"
       },
       "API_OPENWEATHER": {
         "description": "Get your own APPID from https://api.openweathermap.org/data/2.5/weather",
@@ -132,7 +132,7 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": "1131653685"
+         "value": ""
       },
       "SPAMWATCH_SUPPORT_CHAT": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
@@ -228,12 +228,12 @@
       "ARQ_API_KEY": {
          "description": "Start this boat https://t.me/ARQRobot. Get the key ",
          "required": true,
-         "value": ""
+         "value": "QXQKNJ-VNHJKC-DYPMWD-FYPZLZ-ARQ"
       },         
       "REM_BG_API_KEY": {
          "description": "Go to this site https://www.remove.bg/api#remove-background. Get your api key",
          "required": true,
-         "value": ""
+         "value": "32fimf9xZd6t7EPSKrBcmJXk"
       },
       "GENIUS_API_TOKEN": {
          "description": "Go to this site https://docs.genius.com/. Get your api token",
